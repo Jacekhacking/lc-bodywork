@@ -1,11 +1,18 @@
-import './input.css';
+import GlobalStyles from "./components/UI/Styles/Global.styles"
+import Header from "./components/UI/Pages/Header";
+import Hero from "./components/UI/Pages/Hero";
+import PageBody from "./components/UI/Pages/PageBody";
+import Footer from "./components/UI/Pages/Footer";
 
 function App() {
   return (
-    <div className="App bg-red-200">
-     Hello world
-        testing
-    </div>
+    <>
+        <GlobalStyles/>
+        <Header/>
+        <Hero/>
+        <PageBody/>
+        <Footer/>
+    </>
   );
 }
 
