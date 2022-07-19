@@ -1,5 +1,7 @@
 
 import {createGlobalStyle} from "styled-components";
+import styled from "styled-components";
+
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -52,5 +54,8 @@ table {
     border-spacing: 0;
 }
     `
-
 export default GlobalStyles
+
+export const Header1 = styled.h1`
+    font-size: 6.5rem;
+`

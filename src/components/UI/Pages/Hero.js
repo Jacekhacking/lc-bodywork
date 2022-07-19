@@ -1,10 +1,10 @@
-import HeroHolder from "../img/hero-holder.jpg"
-import {HeroContainer} from "../Styles/Hero.styles";
 
+import {HeroContainer} from "../Styles/Hero.styles";
+import  {Header1 } from "../Styles/Global.styles";
 const Hero = () => {
     return(
         <HeroContainer>
-testing
+            <Header1> SC Bodywork!!!</Header1>
         </HeroContainer>
     )
 }
