@@ -28,5 +28,4 @@ const LandingPageBodyCard = (props) => {
         </>
     )
 }
-
 export default LandingPageBodyCard
