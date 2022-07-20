@@ -1,29 +1,29 @@
 import {
-    PageBodyCardButton,
-    PageBodyCardDiv,
+    LandingPageBodyCardDiv,
+    LandingPageBodyCardButton,
 } from "../../Styles/LandingPageBody.styles";
 
 const LandingPageBodyCard = (props) => {
 
     return (
         <>
-            <PageBodyCardDiv>
+            <LandingPageBodyCardDiv>
                 <div>
-                    <PageBodyCardButton onClick={() => props.handleDropdownChange('Page1')}>Filler</PageBodyCardButton>
+                    <LandingPageBodyCardButton onClick={() => props.handleDropdownChange('Page1')}>Filler</LandingPageBodyCardButton>
                 </div>
-            </PageBodyCardDiv>
+            </LandingPageBodyCardDiv>
 
-            <PageBodyCardDiv>
+            <LandingPageBodyCardDiv>
                 <div>
-                    <PageBodyCardButton onClick={() => props.handleDropdownChange('Page2')}>Filler</PageBodyCardButton>
+                    <LandingPageBodyCardButton onClick={() => props.handleDropdownChange('Page2')}>Filler</LandingPageBodyCardButton>
                 </div>
-            </PageBodyCardDiv>
+            </LandingPageBodyCardDiv>
 
-            <PageBodyCardDiv>
+            <LandingPageBodyCardDiv>
                 <div>
-                    <PageBodyCardButton onClick={() => props.handleDropdownChange('Page3')}>Filler</PageBodyCardButton>
+                    <LandingPageBodyCardButton onClick={() => props.handleDropdownChange('Page3')}>Filler</LandingPageBodyCardButton>
                 </div>
-            </PageBodyCardDiv>
+            </LandingPageBodyCardDiv>
 
         </>
     )

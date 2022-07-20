@@ -1,4 +1,4 @@
-import {PageBodyContainer} from "../../Styles/LandingPageBody.styles.js"
+import {LandingPageBodyContainer} from "../../Styles/LandingPageBody.styles.js"
 import LandingPageBodyCard from "./LandingPageBodyCard";
 import {useState} from "react";
 import {DropdownOne, DropdownTwo, DropdownThree} from "./Dropdown.js";
@@ -25,9 +25,9 @@ const BodyPage = () => {
 
     return (
         <>
-            <PageBodyContainer>
+            <LandingPageBodyContainer>
                 <LandingPageBodyCard currentDropdown={currentDropdown} handleDropdownChange={handleDropdownChange}/>
-            </PageBodyContainer>
+            </LandingPageBodyContainer>
             {renderDropdown(currentDropdown)}
         </>
     )
