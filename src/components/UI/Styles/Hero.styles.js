@@ -6,10 +6,9 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   position: relative;
-  
 `
 export const HeroImg = styled.img`
-width: 100%;
+  width: 100%;
 `
 
 
