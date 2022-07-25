@@ -12,6 +12,9 @@ const Hero = () => {
     `
     const HeroImg = styled.img`
       width: 100%;
+      max-height: 1000px;
+      max-width: 1600px;
+      
     `
 
     return (
