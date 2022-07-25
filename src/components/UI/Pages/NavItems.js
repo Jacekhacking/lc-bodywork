@@ -10,12 +10,20 @@ const NavItem = styled.button`
 `
 
 
-const NavItems = (props) => {
+const NavItems = ({ handleMainContentChange, handleDropdownChange, }) => {
 
     const tabs = [
-        'holder',
-        'holder'
+        'Page1',
+        'Page2',
+        'Page3'
     ]
+
+    const ChangeButton = () => {
+        handleMainContentChange('mainBody');
+        handleDropdownChange('Page2');
+        console.log('hello' )
+    }
+
 
     return(
         <>
@@ -25,9 +33,9 @@ const NavItems = (props) => {
                 flexWrap:'wrap'
             }}>
                 {tabs.map(tab => (
-                    <NavItem onClick = {()=> props.handleMainContentChange('mainBody')}>{tab}</NavItem>
+                    <NavItem onClick = {ChangeButton}>{tab}</NavItem>
                 ))}
-                <NavItem onClick = { ()=> props.handleMainContentChange('about') } >About Me</NavItem>
+                <NavItem onClick = { ()=> handleMainContentChange('about') } >About Me</NavItem>
             </ul>
         </>
     )

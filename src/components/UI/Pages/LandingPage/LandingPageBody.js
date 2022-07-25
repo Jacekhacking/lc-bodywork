@@ -1,11 +1,10 @@
 import {LandingPageBodyContainer} from "../../Styles/LandingPageBody.styles.js"
 import LandingPageBodyCard from "./LandingPageBodyCard";
-import {useState} from "react";
 import {DropdownOne, DropdownTwo, DropdownThree} from "./Dropdown.js";
 
-const BodyPage = () => {
+const BodyPage = ({handleDropdownChange, currentDropdown}) => {
 
-    const [currentDropdown, handleDropdownChange] = useState('');
+
 
     const renderDropdown = () => {
         switch (currentDropdown) {

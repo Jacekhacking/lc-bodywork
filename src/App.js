@@ -9,22 +9,32 @@ import About from "./components/UI/Pages/About"
 function App() {
 
     const [mainContent, handleMainContentChange] = useState('')
+    const [currentDropdown, handleDropdownChange] = useState('');
+
+
 
     const renderMainContent = () => {
         switch(mainContent) {
             case 'mainBody' :
-                return <PageBody/>
+                return <PageBody currentDropdown= {currentDropdown} handleDropdownChange={handleDropdownChange} />
             case 'about' :
                 return <About/>
             default:
-                return <PageBody/>
+                return <PageBody currentDropdown= {currentDropdown} handleDropdownChange={handleDropdownChange} />
         }
     }
+
+
 
     return (
         <>
             <GlobalStyles/>
-            <Navbar mainContent ={mainContent} handleMainContentChange = {handleMainContentChange}  />
+            <Navbar 
+            PageBody currentDropdown= {currentDropdown} 
+            handleDropdownChange={handleDropdownChange} 
+            mainContent ={mainContent} 
+            handleMainContentChange = {handleMainContentChange} 
+            />
             <Hero/>
             {renderMainContent(mainContent)}
             <Footer/>

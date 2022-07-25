@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import NavItems from "./NavItems";
 
-const Navbar = ({mainContent, handleMainContentChange}) => {
+const Navbar = ({ handleMainContentChange, handleDropdownChange,  }) => {
 
     const NavContainer = styled.div`
       height: 30px;
@@ -18,14 +18,16 @@ const Navbar = ({mainContent, handleMainContentChange}) => {
         cursor: pointer;
       }
     `
-
-
     return (
         <NavContainer>
             <NavLogo onClick={() => {
                 handleMainContentChange('mainBody')
             }}>Logo Holder</NavLogo>
-            <NavItems mainContent={mainContent} handleMainContentChange={handleMainContentChange}/>
+            <NavItems 
+            
+            handleMainContentChange={handleMainContentChange} 
+            handleDropdownChange={handleDropdownChange}  
+            />
         </NavContainer>
     )
 }
