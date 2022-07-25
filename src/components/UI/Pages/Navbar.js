@@ -11,11 +11,20 @@ const Navbar = ({mainContent, handleMainContentChange}) => {
       align-items: center;
       justify-content: space-between;
     `
+    const NavLogo = styled.button`
+      background-color: transparent;
+      border: none;
+      :hover{
+        cursor: pointer;
+      }
+    `
 
 
     return (
         <NavContainer>
-            <p>Logo Holder</p>
+            <NavLogo onClick={() => {
+                handleMainContentChange('mainBody')
+            }}>Logo Holder</NavLogo>
             <NavItems mainContent={mainContent} handleMainContentChange={handleMainContentChange}/>
         </NavContainer>
     )
