@@ -1,11 +1,16 @@
 import styled from "styled-components";
 
-const NavItem = styled.li`
-padding: 3px;
+const NavItem = styled.button`
+  padding: 3px;
+  background-color: transparent;
+  border: none;
+  :hover {
+    cursor: pointer;
+  }
 `
 
 
-const NavItems = () => {
+const NavItems = (props) => {
 
     const tabs = [
         'holder',
@@ -20,9 +25,9 @@ const NavItems = () => {
                 flexWrap:'wrap'
             }}>
                 {tabs.map(tab => (
-                    <NavItem >{tab}</NavItem>
+                    <NavItem onClick = {()=> props.handleMainContentChange('mainBody')}>{tab}</NavItem>
                 ))}
-                <NavItem >About Me</NavItem>
+                <NavItem onClick = { ()=> props.handleMainContentChange('about') } >About Me</NavItem>
             </ul>
         </>
     )

@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 import NavItems from "./NavItems";
 
-const Navbar = () => {
+const Navbar = ({mainContent, handleMainContentChange}) => {
 
     const NavContainer = styled.div`
       height: 30px;
@@ -12,10 +12,11 @@ const Navbar = () => {
       justify-content: space-between;
     `
 
+
     return (
         <NavContainer>
             <p>Logo Holder</p>
-            <NavItems/>
+            <NavItems mainContent={mainContent} handleMainContentChange={handleMainContentChange}/>
         </NavContainer>
     )
 }

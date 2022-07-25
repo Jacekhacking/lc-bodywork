@@ -4,18 +4,29 @@ import PageBody from "./components/UI/Pages/LandingPage/LandingPageBody";
 import Footer from "./components/UI/Pages/Footer";
 import {useState} from "react";
 import Navbar from "./components/UI/Pages/Navbar";
+import About from "./components/UI/Pages/About"
 
 function App() {
 
-    const [mainContent, setMainContent] = useState('')
+    const [mainContent, handleMainContentChange] = useState('')
 
+    const renderMainContent = () => {
+        switch(mainContent) {
+            case 'mainBody' :
+                return <PageBody/>
+            case 'about' :
+                return <About/>
+            default:
+                return <PageBody/>
+        }
+    }
 
     return (
         <>
             <GlobalStyles/>
-            <Navbar/>
+            <Navbar mainContent ={mainContent} handleMainContentChange = {handleMainContentChange}  />
             <Hero/>
-            <PageBody/>
+            {renderMainContent(mainContent)}
             <Footer/>
         </>
     );
