@@ -18,11 +18,7 @@ const NavItems = ({ handleMainContentChange, handleDropdownChange, }) => {
         'Page3'
     ]
 
-    const ChangeButton = () => {
-        handleMainContentChange('mainBody');
-        handleDropdownChange('Page2');
-        console.log('hello' )
-    }
+
 
 
     return(
@@ -33,7 +29,7 @@ const NavItems = ({ handleMainContentChange, handleDropdownChange, }) => {
                 flexWrap:'wrap'
             }}>
                 {tabs.map(tab => (
-                    <NavItem onClick = {ChangeButton}>{tab}</NavItem>
+                    <NavItem onClick = {() => { handleDropdownChange(tab); handleMainContentChange('mainBody')}}>{tab}</NavItem>
                 ))}
                 <NavItem onClick = { ()=> handleMainContentChange('about') } >About Me</NavItem>
             </ul>

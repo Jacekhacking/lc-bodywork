@@ -22,6 +22,7 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange,  }) => {
         <NavContainer>
             <NavLogo onClick={() => {
                 handleMainContentChange('mainBody')
+                handleDropdownChange('')
             }}>Logo Holder</NavLogo>
             <NavItems 
             
