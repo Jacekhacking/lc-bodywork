@@ -1,6 +1,5 @@
-import {createGlobalStyle} from "styled-components";
+import { createGlobalStyle } from "styled-components";
 import styled from "styled-components";
-
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -35,9 +34,16 @@ const GlobalStyles = createGlobalStyle`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
+  html,body{
+    height: 100%;
+  }
 
+  
   body {
     line-height: 1;
+    background-color: #252626;
+    color: white;
+    
   }
 
   ol, ul {
@@ -58,8 +64,12 @@ const GlobalStyles = createGlobalStyle`
     border-collapse: collapse;
     border-spacing: 0;
   }
-`
-export default GlobalStyles
+
+  .maincolor{
+    color: #5bafbc
+  }
+`;
+export default GlobalStyles;
 
 export const Header1 = styled.h1`
   font-size: 6.5rem;
@@ -67,4 +77,4 @@ export const Header1 = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-`
+`;

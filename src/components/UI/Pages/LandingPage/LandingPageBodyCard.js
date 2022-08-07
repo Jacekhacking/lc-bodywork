@@ -1,31 +1,50 @@
 import {
-    LandingPageBodyCardDiv,
-    LandingPageBodyCardButton,
+  LandingPageBodyCardDiv,
+  LandingPageBodyCardButton,
 } from "../../Styles/LandingPageBody.styles";
 
 const LandingPageBodyCard = (props) => {
+  return (
+    <>
+      <LandingPageBodyCardDiv>
+        <div>
+          <LandingPageBodyCardButton
+            onClick={() => props.handleDropdownChange("Page1")}
+          >
+            Orthopedic Massage
+          </LandingPageBodyCardButton>
+        </div>
+      </LandingPageBodyCardDiv>
 
-    return (
-        <>
-            <LandingPageBodyCardDiv>
-                <div>
-                    <LandingPageBodyCardButton onClick={() => props.handleDropdownChange('Page1')}>Filler</LandingPageBodyCardButton>
-                </div>
-            </LandingPageBodyCardDiv>
+      <LandingPageBodyCardDiv>
+        <div>
+          <LandingPageBodyCardButton
+            onClick={() => props.handleDropdownChange("Page2")}
+          >
+            THERAPEUTIC MASSAGE
+          </LandingPageBodyCardButton>
+        </div>
+      </LandingPageBodyCardDiv>
 
-            <LandingPageBodyCardDiv>
-                <div>
-                    <LandingPageBodyCardButton onClick={() => props.handleDropdownChange('Page2')}>Filler</LandingPageBodyCardButton>
-                </div>
-            </LandingPageBodyCardDiv>
-
-            <LandingPageBodyCardDiv>
-                <div>
-                    <LandingPageBodyCardButton onClick={() => props.handleDropdownChange('Page3')}>Filler</LandingPageBodyCardButton>
-                </div>
-            </LandingPageBodyCardDiv>
-
-        </>
-    )
-}
-export default LandingPageBodyCard
+      <LandingPageBodyCardDiv>
+        <div>
+          <LandingPageBodyCardButton
+            onClick={() => props.handleDropdownChange("Page3")}
+          >
+            SPORTS MASSAGE
+          </LandingPageBodyCardButton>
+        </div>
+      </LandingPageBodyCardDiv>
+      <LandingPageBodyCardDiv>
+        <div>
+          <LandingPageBodyCardButton
+            onClick={() => props.handleDropdownChange("Page4")}
+          >
+            CUPPING
+          </LandingPageBodyCardButton>
+        </div>
+      </LandingPageBodyCardDiv>
+    </>
+  );
+};
+export default LandingPageBodyCard;

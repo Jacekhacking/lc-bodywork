@@ -1,17 +1,22 @@
 import styled from "styled-components";
+import { JsonData } from "../../../data";
 
+console.log(JsonData[0].Bio);
 const About = () => {
-    const AboutParagraph = styled.p`
-      font-size: 2rem;
-      padding:  30px 100px;
-    `
+  const AboutHeader = styled.h2`
+    font-size: 2rem;
+    text-align: center;
+  `;
+  const AboutParagraph = styled.p`
+    font-size: 1.5rem;
+    padding: 30px 100px;
+  `;
 
-    return (
-        <>
-            <AboutParagraph> ABOUT ME!!!!! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus, excepturi quos. Accusamus adipisci
-                alias doloremque, dolores est minus nihil nisi odit officia quas reprehenderit repudiandae sequi,
-                tempore temporibus totam, unde.</AboutParagraph>
-        </>
-    )
-}
+  return (
+    <>
+      <AboutHeader>{JsonData[0].Bio.title}</AboutHeader>
+      <AboutParagraph>{JsonData[0].Bio.content}</AboutParagraph>
+    </>
+  );
+};
 export default About;
