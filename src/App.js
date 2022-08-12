@@ -1,11 +1,13 @@
 import GlobalStyles from "./components/UI/Styles/Global.styles";
-import Hero from "./components/UI/Pages/Hero";
+import Hero from "./components/UI/shared/Hero";
 import PageBody from "./components/UI/Pages/LandingPage/LandingPageBody";
-import Footer from "./components/UI/Pages/Footer";
 import { useState } from "react";
-import Navbar from "./components/UI/Pages/Navbar";
+import Footer from "./components/UI/shared/Footer";
+import Navbar from "./components/UI/shared/Navbar";
 import About from "./components/UI/Pages/About";
 import styled from "styled-components";
+import SideDrawer from "./components/UI/shared/SideDrawer";
+import NavItems from "./components/UI/shared/NavItems";
 
 const AppWrapper = styled.body`
   display: flex;
@@ -48,6 +50,7 @@ function App() {
         mainContent={mainContent}
         handleMainContentChange={handleMainContentChange}
       />
+
       <Hero />
       {renderMainContent(mainContent)}
       <Footer />

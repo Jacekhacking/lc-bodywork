@@ -1,6 +1,4 @@
 import { DropdownContainer } from "../../Styles/LandingPageBody.styles";
-import { JsonData } from "../../../../data";
-
 // const Content = JsonData.json();
 // console.log(Content);
 

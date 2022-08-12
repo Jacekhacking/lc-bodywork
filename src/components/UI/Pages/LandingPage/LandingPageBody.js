@@ -11,15 +11,15 @@ import {
 const BodyPage = ({ handleDropdownChange, currentDropdown }) => {
   const renderDropdown = () => {
     switch (currentDropdown) {
-      case "Page1":
+      case "Orthopedic Massage":
         return <DropdownOne />;
 
-      case "Page2":
+      case "Therapeutic Massage":
         return <DropdownTwo />;
 
-      case "Page3":
+      case "Sports Massage":
         return <DropdownThree />;
-      case "Page4":
+      case "Cupping":
         return <DropdownFour />;
 
       default:

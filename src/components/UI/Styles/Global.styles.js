@@ -7,7 +7,6 @@ import styled from "styled-components";
 */
 const GlobalStyles = createGlobalStyle`
 
-
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -38,7 +37,6 @@ const GlobalStyles = createGlobalStyle`
     height: 100%;
   }
 
-  
   body {
     line-height: 1;
     background-color: #252626;
@@ -77,4 +75,13 @@ export const Header1 = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+`;
+
+export const FlexContainer = styled.div`
+  display: flex;
+`;
+
+export const FlexContainerVertical = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
