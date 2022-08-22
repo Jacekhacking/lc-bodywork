@@ -1,10 +1,8 @@
 import { DropdownContainer } from "../../Styles/LandingPageBody.styles";
-// const Content = JsonData.json();
-// console.log(Content);
 
 export const OrthopedicMassageContent = () => {
   return (
-    <DropdownContainer>
+    <DropdownContainer id="orthopedic massage">
       <h2>ORTHOPEDIC MASSAGE</h2>
       <p>
         Involves an orthopedic assessment, manipulation and movement of soft
@@ -19,7 +17,7 @@ export const OrthopedicMassageContent = () => {
 
 export const TherapeuticMassageContent = () => {
   return (
-    <DropdownContainer>
+    <DropdownContainer id="therapeutic massage">
       <h2>THERAPEUTIC MASSAGE</h2>
       <p>
         Involves a variety of massage techniques for reducing minor muscle
@@ -34,7 +32,7 @@ export const TherapeuticMassageContent = () => {
 
 export const SportsMassageContent = () => {
   return (
-    <DropdownContainer>
+    <DropdownContainer id="sports massage">
       <h2>SPORTS MASSAGE</h2>
       <p>
         Geared towards people who have physically demanding lifestyles and/or
@@ -49,7 +47,7 @@ export const SportsMassageContent = () => {
 
 export const CuppingContent = () => {
   return (
-    <DropdownContainer>
+    <DropdownContainer id="cupping">
       <h2>CUPPING</h2>
       <p>
         Or Myofascial Decompression. Creates a vacuum(negative pressure) between

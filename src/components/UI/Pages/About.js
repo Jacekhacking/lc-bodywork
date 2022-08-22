@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { JsonData } from "../../../data";
 
-console.log(JsonData[0].Bio);
 const About = () => {
   const AboutHeader = styled.h2`
     font-size: 2rem;

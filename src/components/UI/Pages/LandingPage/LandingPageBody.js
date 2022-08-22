@@ -1,14 +1,11 @@
 import { LandingPageBodyContainer } from "../../Styles/LandingPageBody.styles.js";
 import LandingPageBodyCard from "./LandingPageBodyCard";
 
-const BodyPage = ({ handleDropdownChange, currentDropdown }) => {
+const BodyPage = () => {
   return (
     <>
       <LandingPageBodyContainer>
-        <LandingPageBodyCard
-          currentDropdown={currentDropdown}
-          handleDropdownChange={handleDropdownChange}
-        />
+        <LandingPageBodyCard />
       </LandingPageBodyContainer>
     </>
   );

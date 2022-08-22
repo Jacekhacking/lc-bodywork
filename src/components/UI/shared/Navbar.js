@@ -4,6 +4,7 @@ import Logo from "../img/LC_BodyWork_Logo_White.png";
 import NavItems from "./NavItems";
 import { useState } from "react";
 import SideDrawer from "./SideDrawer";
+import { Link } from "@tanstack/react-location";
 
 const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   const NavContainer = styled.div`
@@ -78,14 +79,16 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
         </SideDrawer>
       )}
 
-      <NavLogo
-        onClick={() => {
-          handleMainContentChange("mainBody");
-          handleDropdownChange("");
-        }}
-      >
-        <img src={Logo} alt="" />
-      </NavLogo>
+      <Link to="/">
+        <NavLogo
+          onClick={() => {
+            handleMainContentChange("mainBody");
+            handleDropdownChange("");
+          }}
+        >
+          <img src={Logo} alt="" />
+        </NavLogo>
+      </Link>
 
       <NavHamburger
         className={hamburgerActiveCheck}

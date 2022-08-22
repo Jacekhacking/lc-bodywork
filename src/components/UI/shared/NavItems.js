@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "@tanstack/react-location";
 
 const NavItemContainer = styled.div`
   display: flex;
@@ -13,12 +14,16 @@ const NavItemContainer = styled.div`
   }
 `;
 
-const NavItem = styled.button`
+const NavItem = styled(Link)`
   background-color: transparent;
   color: white;
   border: none;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   border-bottom: 2px solid transparent;
+  text-decoration: none;
+  :not(:last-child) {
+    margin-bottom: 10px;
+  }
   :hover {
     color: #5bafbc;
     border-bottom: 2px solid #5bafbc;
@@ -38,31 +43,39 @@ const NavItems = ({
     "Therapeutic Massage",
     "Sports Massage",
     "Cupping",
-    "FAQ",
   ];
 
   return (
     <NavItemContainer>
       {tabs.map((tab) => (
         <NavItem
+          to="/"
           onClick={() => {
             toggleHamburgerIsActive();
-            handleDropdownChange(tab);
-            handleMainContentChange("mainBody");
             toggleDrawerHandler(false);
           }}
         >
           {tab}
         </NavItem>
       ))}
+
       <NavItem
+        to="about"
         onClick={() => {
           toggleHamburgerIsActive();
-          handleMainContentChange("about");
           toggleDrawerHandler(false);
         }}
       >
         About Me
+      </NavItem>
+      <NavItem
+        to="faq"
+        onClick={() => {
+          toggleHamburgerIsActive();
+          toggleDrawerHandler(false);
+        }}
+      >
+        FAQ
       </NavItem>
     </NavItemContainer>
   );

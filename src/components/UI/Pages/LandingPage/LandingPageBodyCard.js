@@ -1,7 +1,4 @@
-import {
-  LandingPageBodyCardDiv,
-  LandingPageBodyCardButton,
-} from "../../Styles/LandingPageBody.styles";
+import { LandingPageBodyCardDiv } from "../../Styles/LandingPageBody.styles";
 import styled from "styled-components";
 import {
   OrthopedicMassageContent,
