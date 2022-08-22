@@ -48,7 +48,7 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
     :hover {
       cursor: pointer;
       span {
-        background-color: #5bafbc;
+        background-color: #62b1bd;
       }
     }
   `;
@@ -101,6 +101,7 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
         <span />
         <span />
       </NavHamburger>
+
       {/* <div>
         <NavItems
           handleMainContentChange={handleMainContentChange}

@@ -26,15 +26,15 @@ export const LandingPageBodyCardDiv = styled.div`
 
 export const LandingPageBodyCardButton = styled.button`
   color: black;
-  background-color: #5bafbc;
+  background-color: #62b1bd;
   height: 120px;
   width: 220px;
   font-size: 1.7rem;
   border: 3px solid white;
   :hover {
-    color: #5bafbc;
+    color: #62b1bd;
     background-color: black;
-    border: 3px solid #5bafbc;
+    border: 3px solid #62b1bd;
     cursor: pointer;
   }
 `;

@@ -64,8 +64,11 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .maincolor{
-    color: #5bafbc
+    color: #62b1bd
   }
+.styled-list{
+  list-style: inside;
+}
 
   .hamburger-active{
   transition-delay: 0.8s;
@@ -97,6 +100,15 @@ export const Header1 = styled.h1`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+`;
+export const Header2 = styled.h2`
+  font-size: 3rem;
+  text-align: center;
+  color: ${(props) => props.color || "white"};
+`;
+export const Header3 = styled.h3`
+  font-size: 2rem;
+  color: ${(props) => props.color || "white"};
 `;
 
 export const FlexContainer = styled.div`

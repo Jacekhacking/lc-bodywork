@@ -25,8 +25,8 @@ const NavItem = styled(Link)`
     margin-bottom: 10px;
   }
   :hover {
-    color: #5bafbc;
-    border-bottom: 2px solid #5bafbc;
+    color: #62b1bd;
+    border-bottom: 2px solid #62b1bd;
 
     cursor: pointer;
   }
