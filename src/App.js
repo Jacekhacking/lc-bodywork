@@ -20,16 +20,26 @@ function App() {
         routes={[
           {
             path: "/",
-            element: (
-              <>
-                <Hero />
-                <PageBody />
-              </>
-            ),
+            element: () =>
+              import("./components/UI/Pages/LandingPage/LandingPageBody").then(
+                (module) => <module.default />
+              ),
           },
-          { path: "faq", element: <Faq /> },
+          {
+            path: "faq",
+            element: () =>
+              import("./components/UI/Pages/FAQ").then((module) => (
+                <module.default />
+              )),
+          },
 
-          { path: "about", element: <About /> },
+          {
+            path: "about",
+            element: () =>
+              import("./components/UI/Pages/About").then((module) => (
+                <module.default />
+              )),
+          },
         ]}
       >
         <GlobalStyles />
