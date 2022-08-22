@@ -28,17 +28,22 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
       cursor: pointer;
     }
   `;
-  const NavSpan = styled.span`
-    height: 3.5px;
-    width: 25px;
-    margin-top: 5.5px;
-
-    background-color: white;
-  `;
 
   const NavHamburger = styled(FlexContainerVertical)`
     z-index: 2;
-    margin-right: 10px;
+    margin-right: 30px;
+    transition: all 0.4s ease-in-out;
+
+    span {
+      height: 2px;
+      width: 28px;
+      background-color: white;
+      transition: all 0.4s ease-in-out;
+    }
+    span:not(:last-child) {
+      margin-bottom: 7px;
+    }
+
     :hover {
       cursor: pointer;
       span {
@@ -48,19 +53,25 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   `;
 
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+  const [hamburgerIsActive, setHamburgerIsActive] = useState(false);
+
+  const toggleHamburgerIsActive = () => {
+    setHamburgerIsActive((current) => !current);
+  };
 
   const toggleDrawerHandler = () => {
     setDrawerIsOpen((current) => !current);
   };
-  const closeDrawerHandler = () => {
-    setDrawerIsOpen(false);
-  };
+
+  let hamburgerActiveCheck = hamburgerIsActive ? "hamburger-active" : null;
 
   return (
     <NavContainer>
       {drawerIsOpen && (
         <SideDrawer>
           <NavItems
+            toggleHamburgerIsActive={toggleHamburgerIsActive}
+            toggleDrawerHandler={toggleDrawerHandler}
             handleMainContentChange={handleMainContentChange}
             handleDropdownChange={handleDropdownChange}
           />
@@ -76,10 +87,16 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
         <img src={Logo} alt="" />
       </NavLogo>
 
-      <NavHamburger onClick={toggleDrawerHandler}>
-        <NavSpan />
-        <NavSpan />
-        <NavSpan />
+      <NavHamburger
+        className={hamburgerActiveCheck}
+        onClick={() => {
+          toggleDrawerHandler();
+          toggleHamburgerIsActive();
+        }}
+      >
+        <span />
+        <span />
+        <span />
       </NavHamburger>
       {/* <div>
         <NavItems

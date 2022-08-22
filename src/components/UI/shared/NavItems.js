@@ -27,7 +27,12 @@ const NavItem = styled.button`
   }
 `;
 
-const NavItems = ({ handleMainContentChange, handleDropdownChange }) => {
+const NavItems = ({
+  handleMainContentChange,
+  handleDropdownChange,
+  toggleDrawerHandler,
+  toggleHamburgerIsActive,
+}) => {
   const tabs = [
     "Orthopedic Massage",
     "Therapeutic Massage",
@@ -41,14 +46,22 @@ const NavItems = ({ handleMainContentChange, handleDropdownChange }) => {
       {tabs.map((tab) => (
         <NavItem
           onClick={() => {
+            toggleHamburgerIsActive();
             handleDropdownChange(tab);
             handleMainContentChange("mainBody");
+            toggleDrawerHandler(false);
           }}
         >
           {tab}
         </NavItem>
       ))}
-      <NavItem onClick={() => handleMainContentChange("about")}>
+      <NavItem
+        onClick={() => {
+          toggleHamburgerIsActive();
+          handleMainContentChange("about");
+          toggleDrawerHandler(false);
+        }}
+      >
         About Me
       </NavItem>
     </NavItemContainer>

@@ -66,6 +66,28 @@ const GlobalStyles = createGlobalStyle`
   .maincolor{
     color: #5bafbc
   }
+
+  .hamburger-active{
+  transition-delay: 0.8s;
+  transform: rotate(45deg);
+}
+.hamburger-active, .hamburger-active > span{
+transition: all .4s ease-in-out;
+}
+.hamburger-active > span:nth-child(2){
+  width: 0
+}
+.hamburger-active > span:nth-child(1),
+.hamburger-active > span:nth-child(3){
+  transition-delay: .4s;
+}
+.hamburger-active > span:nth-child(1){
+  transform: translateY(9px);
+}
+.hamburger-active > span:nth-child(3){
+  transform: translateY(-9px) rotate(90deg);
+}
+
 `;
 export default GlobalStyles;
 

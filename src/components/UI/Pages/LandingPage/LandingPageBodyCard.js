@@ -2,52 +2,47 @@ import {
   LandingPageBodyCardDiv,
   LandingPageBodyCardButton,
 } from "../../Styles/LandingPageBody.styles";
+import styled from "styled-components";
+import {
+  OrthopedicMassageContent,
+  TherapeuticMassageContent,
+  SportsMassageContent,
+  CuppingContent,
+} from "./Dropdown.js";
+import { FlexContainer } from "../../Styles/Global.styles";
 import CardImg1 from "../../img/StockImg1.jpg";
 import CardImg2 from "../../img/StockImg2.jpg";
 import CardImg3 from "../../img/StockImg3.jpg";
 import CuppingImg from "../../img/cupping.jpg";
+
 const LandingPageBodyCard = (props) => {
-  // console.log(currentDropdown);
+  const LandingPageFlexContainer = styled(FlexContainer)`
+    padding: 20px 100px;
+  `;
+
   return (
     <>
-      <LandingPageBodyCardDiv inputImg={CardImg1}>
-        <div>
-          <LandingPageBodyCardButton
-            onClick={() => props.handleDropdownChange("Orthopedic Massage")}
-          >
-            ORTHOPEDIC MASSAGE
-          </LandingPageBodyCardButton>
-        </div>
-      </LandingPageBodyCardDiv>
+      <LandingPageFlexContainer>
+        <LandingPageBodyCardDiv inputImg={CardImg1}></LandingPageBodyCardDiv>
+        <OrthopedicMassageContent />
+      </LandingPageFlexContainer>
 
-      <LandingPageBodyCardDiv inputImg={CardImg2}>
-        <div>
-          <LandingPageBodyCardButton
-            onClick={() => props.handleDropdownChange("Therapeutic Massage")}
-          >
-            THERAPEUTIC MASSAGE
-          </LandingPageBodyCardButton>
-        </div>
-      </LandingPageBodyCardDiv>
+      <LandingPageFlexContainer>
+        <TherapeuticMassageContent />
+        <LandingPageBodyCardDiv inputImg={CardImg2}></LandingPageBodyCardDiv>
+      </LandingPageFlexContainer>
 
-      <LandingPageBodyCardDiv inputImg={CardImg3}>
-        <div>
-          <LandingPageBodyCardButton
-            onClick={() => props.handleDropdownChange("Sports Massage")}
-          >
-            SPORTS MASSAGE
-          </LandingPageBodyCardButton>
-        </div>
-      </LandingPageBodyCardDiv>
-      <LandingPageBodyCardDiv inputImg={CuppingImg}>
-        <div>
-          <LandingPageBodyCardButton
-            onClick={() => props.handleDropdownChange("Cupping")}
-          >
-            CUPPING
-          </LandingPageBodyCardButton>
-        </div>
-      </LandingPageBodyCardDiv>
+      <LandingPageFlexContainer>
+        <LandingPageBodyCardDiv inputImg={CardImg3}></LandingPageBodyCardDiv>
+
+        <SportsMassageContent />
+      </LandingPageFlexContainer>
+
+      <LandingPageFlexContainer>
+        <CuppingContent />
+
+        <LandingPageBodyCardDiv inputImg={CuppingImg}></LandingPageBodyCardDiv>
+      </LandingPageFlexContainer>
     </>
   );
 };

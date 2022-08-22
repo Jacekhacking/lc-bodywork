@@ -2,7 +2,7 @@ import { DropdownContainer } from "../../Styles/LandingPageBody.styles";
 // const Content = JsonData.json();
 // console.log(Content);
 
-export const DropdownOne = () => {
+export const OrthopedicMassageContent = () => {
   return (
     <DropdownContainer>
       <h2>ORTHOPEDIC MASSAGE</h2>
@@ -17,7 +17,7 @@ export const DropdownOne = () => {
   );
 };
 
-export const DropdownTwo = () => {
+export const TherapeuticMassageContent = () => {
   return (
     <DropdownContainer>
       <h2>THERAPEUTIC MASSAGE</h2>
@@ -32,7 +32,7 @@ export const DropdownTwo = () => {
   );
 };
 
-export const DropdownThree = () => {
+export const SportsMassageContent = () => {
   return (
     <DropdownContainer>
       <h2>SPORTS MASSAGE</h2>
@@ -47,7 +47,7 @@ export const DropdownThree = () => {
   );
 };
 
-export const DropdownFour = () => {
+export const CuppingContent = () => {
   return (
     <DropdownContainer>
       <h2>CUPPING</h2>
