@@ -10,19 +10,44 @@ const Faq = () => {
     align-items: center;
     justify-content: center;
     min-height: 90vh;
+    padding: 15px;
     *:where(:not(:last-child)) {
       margin-bottom: 1rem;
     }
-
+    li {
+      line-height: 1.2;
+      font-size: 1.3rem;
+    }
     p {
+      text-align: center;
       max-width: 800px;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+    h3 {
+      text-align: center;
+      margin-top: 5rem;
+      border-bottom: 3px solid white;
+    }
+    @media (max-width: 500px) {
+      li {
+        font-size: 1.1rem;
+      }
+      p {
+        font-size: 1.2rem;
+      }
+      h3 {
+        margin-top: 2rem;
+      }
     }
   `;
 
   return (
     <>
       <FaqContainer>
-        <Header2 style={{ marginBottom: "5rem" }}>FAQ</Header2>
+        <Header2 style={{ marginBottom: "1rem", marginTop: "3rem" }}>
+          FAQ
+        </Header2>
 
         <Header3>
           What is Orthopedic Assessment in Massage Therapy? (And why do I need
@@ -45,7 +70,7 @@ const Faq = () => {
           </li>
         </ul>
 
-        <Header3>Tips?</Header3>
+        <Header3 style={{ marginTop: "5rem" }}>Tips?</Header3>
         <p>
           Tips are never expected. My rates cover the cost of doing business
           with you. Massage Therapy is my profession and I am a provider in your
@@ -55,7 +80,7 @@ const Faq = () => {
 
         <Header3 style={{ marginTop: "5rem" }}>Services & Rates</Header3>
 
-        <ul>
+        <ul style={{ textAlign: "center" }}>
           <li>45min- $90</li>
           <li>60min- $120</li>
           <li>90min- $175</li>

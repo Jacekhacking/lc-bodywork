@@ -8,6 +8,7 @@ const Footer = () => {
     justify-content: space-evenly;
     align-items: center;
     flex-shrink: 0;
+    margin-top: 3rem;
   `;
 
   return (
