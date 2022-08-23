@@ -37,9 +37,13 @@ export const LandingPageBodyCardButton = styled.button`
     border: 3px solid #62b1bd;
     cursor: pointer;
   }
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const DropdownContainer = styled.div`
+  max-width: 700px;
   padding: 0 30px;
   display: flex;
   align-items: center;
@@ -49,5 +53,8 @@ export const DropdownContainer = styled.div`
 
   h2 {
     padding-bottom: 10px;
+  }
+  @media (max-width: 1200px) {
+    display: none;
   }
 `;

@@ -1,4 +1,7 @@
-import { LandingPageBodyCardDiv } from "../../Styles/LandingPageBody.styles";
+import {
+  LandingPageBodyCardDiv,
+  LandingPageBodyCardButton,
+} from "../../Styles/LandingPageBody.styles";
 import styled from "styled-components";
 import {
   OrthopedicMassageContent,
@@ -20,17 +23,28 @@ const LandingPageBodyCard = (props) => {
   return (
     <>
       <LandingPageFlexContainer>
-        <LandingPageBodyCardDiv inputImg={CardImg1}></LandingPageBodyCardDiv>
+        <LandingPageBodyCardDiv inputImg={CardImg1}>
+          <LandingPageBodyCardButton>
+            Orthopedic Massage
+          </LandingPageBodyCardButton>
+        </LandingPageBodyCardDiv>
         <OrthopedicMassageContent />
       </LandingPageFlexContainer>
 
       <LandingPageFlexContainer>
         <TherapeuticMassageContent />
-        <LandingPageBodyCardDiv inputImg={CardImg2}></LandingPageBodyCardDiv>
+        <LandingPageBodyCardDiv inputImg={CardImg2}>
+          <LandingPageBodyCardButton>
+            {" "}
+            Therapeutic Massage
+          </LandingPageBodyCardButton>
+        </LandingPageBodyCardDiv>
       </LandingPageFlexContainer>
 
       <LandingPageFlexContainer>
-        <LandingPageBodyCardDiv inputImg={CardImg3}></LandingPageBodyCardDiv>
+        <LandingPageBodyCardDiv inputImg={CardImg3}>
+          <LandingPageBodyCardButton>Sports Massage</LandingPageBodyCardButton>
+        </LandingPageBodyCardDiv>
 
         <SportsMassageContent />
       </LandingPageFlexContainer>
@@ -38,7 +52,9 @@ const LandingPageBodyCard = (props) => {
       <LandingPageFlexContainer>
         <CuppingContent />
 
-        <LandingPageBodyCardDiv inputImg={CuppingImg}></LandingPageBodyCardDiv>
+        <LandingPageBodyCardDiv inputImg={CuppingImg}>
+          <LandingPageBodyCardButton>Cupping</LandingPageBodyCardButton>
+        </LandingPageBodyCardDiv>
       </LandingPageFlexContainer>
     </>
   );
