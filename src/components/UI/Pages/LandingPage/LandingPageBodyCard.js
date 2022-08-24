@@ -35,7 +35,6 @@ const LandingPageBodyCard = (props) => {
         <TherapeuticMassageContent />
         <LandingPageBodyCardDiv inputImg={CardImg2}>
           <LandingPageBodyCardButton>
-            {" "}
             Therapeutic Massage
           </LandingPageBodyCardButton>
         </LandingPageBodyCardDiv>
