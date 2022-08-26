@@ -1,6 +1,6 @@
-import { styled } from "styled-components";
-import { FlexContainerVertical } from "../../Styles/Global.styles";
-
+import styled from "styled-components";
+import { FlexContainerVertical } from "./Global.styles";
+import { Link } from "@tanstack/react-location";
 export const NavContainer = styled.div`
   height: 65px;
   background-color: grey;
