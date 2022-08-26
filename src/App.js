@@ -1,6 +1,6 @@
 import GlobalStyles from "./components/UI/Styles/Global.styles";
 import Footer from "./components/UI/shared/Footer";
-import Navbar from "./components/UI/shared/Navbar";
+import Navbar from "./components/UI/shared/Navigation/Navbar";
 
 import { Outlet, ReactLocation, Router } from "@tanstack/react-location";
 

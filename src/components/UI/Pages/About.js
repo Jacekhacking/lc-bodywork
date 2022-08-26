@@ -1,17 +1,18 @@
 import styled from "styled-components";
 import { JsonData } from "../../../data";
 import BioPic from "../img/biopic.JPG";
+import { Header2 } from "../Styles/Global.styles";
 
 const About = () => {
-  const AboutHeader = styled.h2`
+  const AboutHeader = styled.h3`
     padding: 2rem;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
   `;
   const AboutWrapper = styled.div`
     font-size: 1.5rem;
     line-height: 1.4;
-    padding: 30px 100px;
+    padding: 30px 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -22,7 +23,7 @@ const About = () => {
     }
 
     img {
-      width: min(650px, 65%);
+      width: min(600px, 65%);
       height: auto;
       padding: 1rem;
     }
@@ -40,14 +41,16 @@ const About = () => {
   `;
 
   return (
-    <AboutWrapper>
-      <img src={BioPic} alt="Bio" />
-
-      <p>
-        <AboutHeader>{JsonData[0].Bio.title}</AboutHeader>
-        {JsonData[0].Bio.content}
-      </p>
-    </AboutWrapper>
+    <>
+      {/* <Header2>ABOUT ME</Header2> */}
+      <AboutWrapper>
+        <img src={BioPic} alt="Bio" />
+        <p>
+          <AboutHeader>{JsonData[0].Bio.title}</AboutHeader>
+          {JsonData[0].Bio.content}
+        </p>
+      </AboutWrapper>
+    </>
   );
 };
 export default About;

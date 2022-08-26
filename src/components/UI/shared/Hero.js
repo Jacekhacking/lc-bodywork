@@ -8,7 +8,7 @@ const Hero = () => {
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 600px;
+    min-height: 60vh;
     height: 900px;
     background-image: url(${Img}), url(${LogoImg});
     background-repeat: no-repeat;

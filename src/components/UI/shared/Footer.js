@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import FooterLogo from "../img/LC_BodyWork_Icon_White_Teal.png";
 const Footer = () => {
   const FooterContainer = styled.div`
     min-height: 100px;
@@ -14,9 +14,13 @@ const Footer = () => {
   return (
     <>
       <FooterContainer>
-        <div>holder</div>
-        <div>holder2</div>
-        <div>holder3</div>
+        <div>
+          <img
+            src={FooterLogo}
+            alt=""
+            style={{ height: "100px", paddingTop: "10%", paddingBottom: "10%" }}
+          />
+        </div>
       </FooterContainer>
     </>
   );

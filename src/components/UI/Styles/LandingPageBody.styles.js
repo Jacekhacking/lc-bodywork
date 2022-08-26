@@ -15,13 +15,12 @@ export const LandingPageBodyCardDiv = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
+  margin: 7% 0;
+  width: 300px;
   height: 300px;
-  min-width: 300px;
   border-radius: 5px;
+  @media (max-width: 1200px) {
+  }
 `;
 
 export const LandingPageBodyCardButton = styled.button`
@@ -55,6 +54,6 @@ export const DropdownContainer = styled.div`
     padding-bottom: 10px;
   }
   @media (max-width: 1200px) {
-    display: none;
+    /* display: none; */
   }
 `;

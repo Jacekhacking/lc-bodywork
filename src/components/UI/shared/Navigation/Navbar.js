@@ -1,10 +1,11 @@
 import styled from "styled-components";
-import { FlexContainerVertical } from "../Styles/Global.styles";
-import Logo from "../img/LC_BodyWork_Logo_White.png";
+import { FlexContainerVertical } from "../../Styles/Global.styles";
+import Logo from "../../img/LC_BodyWork_Logo_White.png";
 import NavItems from "./NavItems";
 import { useState } from "react";
-import SideDrawer from "./SideDrawer";
+import SideDrawer from "../SideDrawer";
 import { Link } from "@tanstack/react-location";
+import SideDrawerLogo from "../../img/LC_BodyWork_Icon_White_Teal.png";
 
 const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   const NavContainer = styled.div`
@@ -70,6 +71,14 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
     <NavContainer>
       {drawerIsOpen && (
         <SideDrawer>
+          <img
+            src={SideDrawerLogo}
+            alt="logo"
+            style={{ height: "70px", paddingBottom: "2rem" }}
+          />
+
+          <button style={{ marginBottom: "3rem" }}>Book A Session!</button>
+
           <NavItems
             toggleHamburgerIsActive={toggleHamburgerIsActive}
             toggleDrawerHandler={toggleDrawerHandler}

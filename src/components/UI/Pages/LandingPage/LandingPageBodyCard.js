@@ -24,9 +24,9 @@ const LandingPageBodyCard = (props) => {
     <>
       <LandingPageFlexContainer>
         <LandingPageBodyCardDiv inputImg={CardImg1}>
-          <LandingPageBodyCardButton>
+          {/* <LandingPageBodyCardButton>
             Orthopedic Massage
-          </LandingPageBodyCardButton>
+          </LandingPageBodyCardButton> */}
         </LandingPageBodyCardDiv>
         <OrthopedicMassageContent />
       </LandingPageFlexContainer>
@@ -50,7 +50,6 @@ const LandingPageBodyCard = (props) => {
 
       <LandingPageFlexContainer>
         <CuppingContent />
-
         <LandingPageBodyCardDiv inputImg={CuppingImg}>
           <LandingPageBodyCardButton>Cupping</LandingPageBodyCardButton>
         </LandingPageBodyCardDiv>
