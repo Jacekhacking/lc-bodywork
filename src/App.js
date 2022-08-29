@@ -42,6 +42,13 @@ function App() {
                 <module.default />
               )),
           },
+
+          {
+            element: () =>
+              import("./components/UI/Pages/LandingPage/LandingPageBody").then(
+                (module) => <module.default />
+              ),
+          },
         ]}
       >
         <GlobalStyles />
