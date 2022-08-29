@@ -29,7 +29,8 @@ export const LandingPageBodyCardButton = styled.button`
   height: 120px;
   width: 220px;
   font-size: 1.7rem;
-  border: 3px solid white;
+  border: 3px solid black;
+  border-radius: 5px;
   :hover {
     color: #62b1bd;
     background-color: black;

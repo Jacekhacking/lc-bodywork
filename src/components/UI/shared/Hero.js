@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Img from "../img/Hero.jpg";
 import LogoImg from "../img/LC_BodyWork_Logo_Color.png";
+import { Header2, StyledButton } from "../Styles/Global.styles";
 
 const Hero = () => {
   const HeroContainer = styled.div`
@@ -8,12 +9,12 @@ const Hero = () => {
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 60vh;
-    height: 900px;
+    height: 65vh;
+
     background-image: url(${Img}), url(${LogoImg});
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0 15px 15px black;
+    /* box-shadow: 0 15px 15px black; */
     img {
       height: 90%;
       width: auto;
@@ -21,9 +22,25 @@ const Hero = () => {
   `;
 
   return (
-    <HeroContainer>
-      <img src={LogoImg} alt="" />
-    </HeroContainer>
+    <>
+      <HeroContainer>
+        <img src={LogoImg} alt="" />
+      </HeroContainer>
+
+      <div
+        style={{
+          minHeight: "30vh",
+          display: "flex",
+          justifyContent: "space-evenly",
+          alignItems: "center",
+          flexDirection: "column",
+          backgroundColor: "black",
+        }}
+      >
+        <Header2 style={{}}>Pain and Injury Relief and Sports Recovery</Header2>
+        <StyledButton>Book Now!</StyledButton>
+      </div>
+    </>
   );
 };
 export default Hero;

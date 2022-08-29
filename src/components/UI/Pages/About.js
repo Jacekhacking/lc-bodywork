@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { JsonData } from "../../../data";
 import BioPic from "../img/biopic.JPG";
-import { Header2 } from "../Styles/Global.styles";
 
 const About = () => {
   const AboutHeader = styled.h3`
@@ -42,7 +41,6 @@ const About = () => {
 
   return (
     <>
-      {/* <Header2>ABOUT ME</Header2> */}
       <AboutWrapper>
         <img src={BioPic} alt="Bio" />
         <p>

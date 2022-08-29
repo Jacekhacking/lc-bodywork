@@ -10,7 +10,8 @@ import {
   NavLogo,
   NavHamburger,
 } from "../../Styles/Navigation.styles";
-import Logo from "../../img/LC_BodyWork_Logo_White.png";
+import { StyledButton } from "../../Styles/Global.styles";
+import Logo from "../../img/LC_BodyWork_Icon_White.png";
 
 const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
@@ -30,13 +31,19 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
     <NavContainer>
       {drawerIsOpen && (
         <SideDrawer>
-          <img
-            src={SideDrawerLogo}
-            alt="logo"
-            style={{ height: "70px", paddingBottom: "2rem" }}
-          />
-
-          <button style={{ marginBottom: "3rem" }}>Book A Session!</button>
+          <Link
+            to="/"
+            onClick={() => {
+              toggleDrawerHandler(false);
+              toggleHamburgerIsActive();
+            }}
+          >
+            <img
+              src={SideDrawerLogo}
+              alt="logo"
+              style={{ height: "120px", paddingBottom: "2rem" }}
+            />
+          </Link>
 
           <NavItems
             toggleHamburgerIsActive={toggleHamburgerIsActive}
@@ -44,17 +51,15 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
             handleMainContentChange={handleMainContentChange}
             handleDropdownChange={handleDropdownChange}
           />
+          <StyledButton style={{ marginTop: "2rem", height: "70px" }}>
+            Book A Session!
+          </StyledButton>
         </SideDrawer>
       )}
 
       <Link to="/">
-        <NavLogo
-          onClick={() => {
-            handleMainContentChange("mainBody");
-            handleDropdownChange("");
-          }}
-        >
-          <img src={Logo} alt="" />
+        <NavLogo>
+          <img src={Logo} alt="LC BODYWORK logo" />
         </NavLogo>
       </Link>
 

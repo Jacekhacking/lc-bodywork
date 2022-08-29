@@ -38,9 +38,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   body {
-    line-height: 1;
+    line-height: 1.2;
     background-color: #252626;
     color: white;
+    font-family: obvia, sans-serif;
+    font-style: normal;
+    font-weight: 100%;
+  
+
     
   }
 
@@ -118,4 +123,20 @@ export const FlexContainer = styled.div`
 export const FlexContainerVertical = styled.div`
   display: flex;
   flex-direction: column;
+`;
+
+export const StyledButton = styled.button`
+  color: black;
+  background-color: #62b1bd;
+  height: 120px;
+  width: 220px;
+  font-size: 1.7rem;
+  border: 3px solid black;
+  border-radius: 5px;
+  :hover {
+    color: #62b1bd;
+    background-color: black;
+    border: 3px solid #62b1bd;
+    cursor: pointer;
+  }
 `;
