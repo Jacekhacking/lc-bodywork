@@ -48,9 +48,8 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
           <NavItems
             toggleHamburgerIsActive={toggleHamburgerIsActive}
             toggleDrawerHandler={toggleDrawerHandler}
-            handleMainContentChange={handleMainContentChange}
-            handleDropdownChange={handleDropdownChange}
           />
+
           <StyledButton style={{ marginTop: "2rem", height: "70px" }}>
             Book A Session!
           </StyledButton>

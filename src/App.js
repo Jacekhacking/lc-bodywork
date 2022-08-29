@@ -35,6 +35,13 @@ function App() {
                 <module.default />
               )),
           },
+          {
+            path: "services",
+            element: () =>
+              import("./components/UI/Pages/Services").then((module) => (
+                <module.default />
+              )),
+          },
         ]}
       >
         <GlobalStyles />

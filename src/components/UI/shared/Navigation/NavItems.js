@@ -1,32 +1,17 @@
 import { NavItemContainer, NavItem } from "../../Styles/Navigation.styles";
 
-const NavItems = ({
-  handleMainContentChange,
-  handleDropdownChange,
-  toggleDrawerHandler,
-  toggleHamburgerIsActive,
-}) => {
-  const tabs = [
-    "Orthopedic Massage",
-    "Therapeutic Massage",
-    "Sports Massage",
-    "Cupping",
-  ];
-
+const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
   return (
     <NavItemContainer>
-      {tabs.map((tab) => (
-        <NavItem
-          to="/"
-          onClick={() => {
-            toggleHamburgerIsActive();
-            toggleDrawerHandler(false);
-          }}
-        >
-          {tab}
-        </NavItem>
-      ))}
-
+      <NavItem
+        to="services"
+        onClick={() => {
+          toggleHamburgerIsActive();
+          toggleDrawerHandler(false);
+        }}
+      >
+        Services / Prices
+      </NavItem>
       <NavItem
         to="about"
         onClick={() => {
@@ -36,6 +21,16 @@ const NavItems = ({
       >
         About Me
       </NavItem>
+      <NavItem
+        to="/"
+        onClick={() => {
+          toggleHamburgerIsActive();
+          toggleDrawerHandler(false);
+        }}
+      >
+        Modalities
+      </NavItem>
+
       <NavItem
         to="faq"
         onClick={() => {
