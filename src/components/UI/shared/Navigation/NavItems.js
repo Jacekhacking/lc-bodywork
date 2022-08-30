@@ -12,6 +12,17 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
       >
         Services / Prices
       </NavItem>
+
+      <NavItem
+        to="/"
+        onClick={() => {
+          toggleHamburgerIsActive();
+          toggleDrawerHandler(false);
+        }}
+      >
+        Treatment Options
+      </NavItem>
+
       <NavItem
         to="about"
         onClick={() => {
@@ -20,15 +31,6 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
         }}
       >
         About Me
-      </NavItem>
-      <NavItem
-        to="/"
-        onClick={() => {
-          toggleHamburgerIsActive();
-          toggleDrawerHandler(false);
-        }}
-      >
-        Modalities
       </NavItem>
 
       <NavItem

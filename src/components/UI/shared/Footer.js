@@ -3,7 +3,7 @@ import FooterLogo from "../img/LC_BodyWork_Icon_White_Teal.png";
 import FaceBookIcon from "../img/f_logo_RGB-White_72.png";
 const Footer = () => {
   const FooterContainer = styled.div`
-    min-height: 100px;
+    min-height: 10%;
     background-color: grey;
     display: flex;
     justify-content: space-between;

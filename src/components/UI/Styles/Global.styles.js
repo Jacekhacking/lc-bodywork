@@ -95,6 +95,9 @@ transition: all .4s ease-in-out;
 .hamburger-active > span:nth-child(3){
   transform: translateY(-9px) rotate(90deg);
 }
+.show{
+  display:flex
+}
 
 `;
 export default GlobalStyles;
@@ -112,7 +115,9 @@ export const Header2 = styled.h2`
   color: ${(props) => props.color || "white"};
 `;
 export const Header3 = styled.h3`
-  font-size: 2rem;
+  font-size: 2.3rem;
+  text-transform: uppercase;
+  text-decoration: underline;
   color: ${(props) => props.color || "white"};
 `;
 
@@ -138,5 +143,44 @@ export const StyledButton = styled.button`
     background-color: black;
     border: 3px solid #62b1bd;
     cursor: pointer;
+  }
+`;
+
+export const TextContentPageWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+  padding: 15px;
+  *:where(:not(:last-child)) {
+    margin-bottom: 1rem;
+  }
+  li {
+    line-height: 1.2;
+    font-size: 1.3rem;
+  }
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.2;
+    max-width: 800px;
+  }
+  h3 {
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 5rem;
+    text-decoration: underline;
+  }
+  @media (max-width: 500px) {
+    li {
+      font-size: 1.1rem;
+    }
+    p {
+      font-size: 1.2rem;
+    }
+    h3 {
+      margin-top: 2rem;
+    }
   }
 `;

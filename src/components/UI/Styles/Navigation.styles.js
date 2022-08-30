@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { FlexContainerVertical } from "./Global.styles";
 import { Link } from "@tanstack/react-location";
+
 export const NavContainer = styled.div`
-  height: 65px;
+  height: 10%;
   background-color: grey;
   display: flex;
   align-items: center;
@@ -64,11 +65,11 @@ export const NavItem = styled(Link)`
   background-color: transparent;
   color: white;
   border: none;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-bottom: 2px solid transparent;
   text-decoration: none;
   :not(:last-child) {
-    margin-bottom: 10px;
+    margin-bottom: 14px;
   }
   :hover {
     color: #62b1bd;

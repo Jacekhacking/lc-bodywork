@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { FlexContainer } from "./Global.styles";
 export const LandingPageBodyContainer = styled.div`
   padding: 30px 0;
   display: flex;
@@ -19,6 +19,9 @@ export const LandingPageBodyCardDiv = styled.div`
   width: 300px;
   height: 300px;
   border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   @media (max-width: 1200px) {
   }
 `;
@@ -37,7 +40,7 @@ export const LandingPageBodyCardButton = styled.button`
     border: 3px solid #62b1bd;
     cursor: pointer;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 1600px) {
     display: none;
   }
 `;
@@ -54,7 +57,16 @@ export const DropdownContainer = styled.div`
   h2 {
     padding-bottom: 10px;
   }
-  @media (max-width: 1200px) {
-    /* display: none; */
+  @media (max-width: 1600px) {
+    display: none;
+  }
+`;
+
+export const LandingPageWrapper = styled(FlexContainer)`
+  padding: 20px 100px;
+  @media (max-width: 1600px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 `;

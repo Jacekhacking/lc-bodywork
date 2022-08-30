@@ -18,13 +18,12 @@ const About = () => {
     min-height: 90vh;
     @media (max-width: 1200px) {
       font-size: 1.4rem;
-      padding: 10px 30px;
     }
 
     img {
       width: min(600px, 65%);
       height: auto;
-      padding: 1rem;
+      padding: 0.5rem;
     }
     p {
       display: flex;
