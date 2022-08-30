@@ -61,6 +61,22 @@ export const DropdownContainer = styled.div`
     display: none;
   }
 `;
+export const DropdownContainer2 = styled.div`
+  max-width: 500px;
+  padding: 0 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  flex-direction: column;
+
+  h2 {
+    padding-bottom: 10px;
+  }
+  @media (min-width: 1600px) {
+    display: none;
+  }
+`;
 
 export const LandingPageWrapper = styled(FlexContainer)`
   padding: 20px 100px;

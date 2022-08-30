@@ -4,10 +4,11 @@ import {
   LandingPageBodyCardButton,
   DropdownContainer,
   LandingPageWrapper,
+  DropdownContainer2,
 } from "../../Styles/LandingPageBody.styles";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
 const ModalitiesCard = (props) => {
   const [dropdownStyle, setDropdownStyle] = useState("");
+  const [dropdown, setDropdown] = useState();
 
   const changeDropdownStyle = () => {
     if (dropdownStyle === "") {
@@ -17,21 +18,41 @@ const ModalitiesCard = (props) => {
     }
   };
 
-  const [parent] = useAutoAnimate(/* optional config */);
+  const toggleDropdown = () => {
+    setDropdown((current) => !current);
+    console.log(dropdown);
+  };
+
+  const renderDropdown = () => {
+    switch (dropdown) {
+      case true:
+        return (
+          <>
+            <DropdownContainer2>
+              <p>{props.description}</p>
+            </DropdownContainer2>
+          </>
+        );
+      case false:
+        return "";
+      default:
+        return "";
+    }
+  };
 
   return (
     <>
       <LandingPageWrapper>
         <LandingPageBodyCardDiv inputImg={props.image}>
-          <LandingPageBodyCardButton onClick={changeDropdownStyle}>
+          <LandingPageBodyCardButton onClick={toggleDropdown}>
             {props.title}
           </LandingPageBodyCardButton>
         </LandingPageBodyCardDiv>
-
-        <DropdownContainer ref={parent} style={{ display: `${dropdownStyle}` }}>
+        <DropdownContainer>
           <h2>{props.title}</h2>
           <p>{props.description}</p>
         </DropdownContainer>
+        {renderDropdown(dropdown)}
       </LandingPageWrapper>
     </>
   );
