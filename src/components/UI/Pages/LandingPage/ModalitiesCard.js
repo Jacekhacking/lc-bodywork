@@ -6,8 +6,10 @@ import {
   LandingPageWrapper,
   DropdownContainer2,
 } from "../../Styles/LandingPageBody.styles";
+import { DropDownJson } from "../../../../data";
 
 import autoAnimate from "@formkit/auto-animate";
+
 const ModalitiesCard = (props) => {
   const [dropdown, setDropdown] = useState(false);
   const listRef = useRef(null);
@@ -39,4 +41,16 @@ const ModalitiesCard = (props) => {
     </>
   );
 };
-export default ModalitiesCard;
+
+const ModalitiesComponent = (props) => {
+  const Contents = DropDownJson;
+
+  return (
+    <>
+      {Contents.map((content) => (
+        <ModalitiesCard {...content} />
+      ))}
+    </>
+  );
+};
+export default ModalitiesComponent;
