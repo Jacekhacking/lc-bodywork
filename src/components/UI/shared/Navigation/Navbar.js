@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-location";
+import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import SideDrawerLogo from "../../img/LC_BodyWork_Icon_White_Teal.png";
 import SideDrawer from "../SideDrawer";
@@ -26,9 +27,10 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   };
 
   let hamburgerActiveCheck = hamburgerIsActive ? "hamburger-active" : null;
+  const [listRef] = useAutoAnimate();
 
   return (
-    <NavContainer>
+    <NavContainer ref={listRef}>
       {drawerIsOpen && (
         <SideDrawer>
           <Link
@@ -73,13 +75,6 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
         <span />
         <span />
       </NavHamburger>
-
-      {/* <div>
-        <NavItems
-          handleMainContentChange={handleMainContentChange}
-          handleDropdownChange={handleDropdownChange}
-        />
-      </div> */}
     </NavContainer>
   );
 };

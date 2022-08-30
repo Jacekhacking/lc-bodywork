@@ -81,8 +81,7 @@ export const DropdownContainer2 = styled.div`
 export const LandingPageWrapper = styled(FlexContainer)`
   padding: 20px 100px;
   @media (max-width: 1600px) {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    text-align: center;
   }
 `;
