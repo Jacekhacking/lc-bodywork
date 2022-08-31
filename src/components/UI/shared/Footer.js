@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import FooterLogo from "../img/LC_BodyWork_Icon_White_Teal.png";
 import FaceBookIcon from "../img/f_logo_RGB-White_72.png";
+import InstagramIcon from "../img/Instagram_Glyph_White.png";
 const Footer = () => {
   const FooterContainer = styled.div`
     min-height: 10%;
@@ -27,7 +28,12 @@ const Footer = () => {
           />
         </div>
         <div>
-          <img src={FaceBookIcon} alt="Facebook" style={{ height: "70px" }} />
+          <a href="">
+            <img src={FaceBookIcon} alt="Facebook" style={{ height: "60px" }} />
+          </a>
+          <a href="https://www.instagram.com/lc.bodywork/">
+            <img src={InstagramIcon} style={{ height: "60px" }} alt="" />
+          </a>
         </div>
       </FooterContainer>
     </>

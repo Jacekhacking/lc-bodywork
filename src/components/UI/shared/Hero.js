@@ -11,13 +11,22 @@ const Hero = () => {
     position: relative;
     height: 65vh;
 
-    background-image: url(${Img}), url(${LogoImg});
+    background-image: url(${Img});
     background-repeat: no-repeat;
     background-size: cover;
     /* box-shadow: 0 15px 15px black; */
     img {
       height: 90%;
       width: auto;
+    }
+    @media (max-width: 1000px) {
+      img {
+        width: 100%;
+        height: auto;
+      }
+      @media (max-width: 550px) {
+        height: 40vh;
+      }
     }
   `;
 
