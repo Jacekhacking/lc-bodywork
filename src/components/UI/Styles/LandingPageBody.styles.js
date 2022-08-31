@@ -6,7 +6,6 @@ export const LandingPageBodyContainer = styled.div`
   align-items: center;
   justify-content: space-evenly;
   flex-wrap: wrap;
-  flex: 1 0 auto;
 `;
 
 export const LandingPageBodyCardDiv = styled.div`
