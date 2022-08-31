@@ -23,6 +23,7 @@ export const LandingPageBodyCardDiv = styled.div`
   @media (max-width: 1000px) {
     width: 20rem;
     height: 20rem;
+    margin: 0;
   }
 `;
 
@@ -48,10 +49,10 @@ export const LandingPageBodyCardButton = styled.button`
 export const DropdownContainer = styled.div`
   max-width: 50rem;
   padding: 0 2rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
   flex-direction: column;
 
   h2 {
@@ -62,15 +63,12 @@ export const DropdownContainer = styled.div`
     display: none;
   }
 `;
+
 export const DropdownContainer2 = styled.div`
-  max-width: 30rem;
-  padding: 0 30px;
+  margin-top: 1rem;
+  max-width: 40rem;
   font-size: 2rem;
-  margin: 2rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  text-align: center;
 
   @media (min-width: 1600px) {
     display: none;
@@ -78,7 +76,6 @@ export const DropdownContainer2 = styled.div`
   @media (max-width: 1000px) {
     font-size: 1.3rem;
     max-width: 20rem;
-    margin: 1rem;
   }
 `;
 
