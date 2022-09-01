@@ -5,6 +5,7 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
     <NavItemContainer>
       <NavItem
         to="services"
+        getActiveProps={getActiveProps}
         onClick={() => {
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
@@ -15,6 +16,7 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
 
       <NavItem
         to="/"
+        getActiveProps={getActiveProps}
         onClick={() => {
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
@@ -25,6 +27,7 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
 
       <NavItem
         to="about"
+        getActiveProps={getActiveProps}
         onClick={() => {
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
@@ -35,6 +38,7 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
 
       <NavItem
         to="faq"
+        getActiveProps={getActiveProps}
         onClick={() => {
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
@@ -45,5 +49,13 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
     </NavItemContainer>
   );
 };
+
+function getActiveProps() {
+  return {
+    style: {
+      color: "#62b1bd",
+    },
+  };
+}
 
 export default NavItems;
