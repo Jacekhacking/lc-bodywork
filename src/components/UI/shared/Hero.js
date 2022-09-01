@@ -21,11 +21,9 @@ const Hero = () => {
     }
     @media (max-width: 1000px) {
       img {
-        width: 100%;
-        height: auto;
+        height: 60%;
       }
       @media (max-width: 550px) {
-        height: 40vh;
       }
     }
   `;

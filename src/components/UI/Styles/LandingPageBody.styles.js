@@ -14,8 +14,8 @@ export const LandingPageBodyCardDiv = styled.div`
   background-repeat: no-repeat;
   background-size: cover;
   margin: 7% 0;
-  width: 600px;
-  height: 600px;
+  width: 45rem;
+  height: 45rem;
   border-radius: 5px;
   display: flex;
   align-items: center;
@@ -66,8 +66,8 @@ export const DropdownContainer = styled.div`
 
 export const DropdownContainer2 = styled.div`
   margin-top: 1rem;
-  max-width: 40rem;
-  font-size: 2rem;
+  max-width: 45rem;
+  font-size: 1.7rem;
   text-align: center;
 
   @media (min-width: 1600px) {
