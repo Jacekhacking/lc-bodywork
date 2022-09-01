@@ -4,7 +4,7 @@ import { useAutoAnimate } from "@formkit/auto-animate/react";
 
 import SideDrawerLogo from "../../img/LC_BodyWork_Icon_White_Teal.png";
 import SideDrawer from "../SideDrawer";
-import NavItems from "./NavItems";
+import { NavItems, NavItemsSidebar } from "./NavItems";
 
 import {
   NavContainer,
@@ -47,7 +47,7 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
             />
           </Link>
 
-          <NavItems
+          <NavItemsSidebar
             toggleHamburgerIsActive={toggleHamburgerIsActive}
             toggleDrawerHandler={toggleDrawerHandler}
           />
@@ -63,6 +63,10 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
           <img src={Logo} alt="LC BODYWORK logo" />
         </NavLogo>
       </Link>
+
+      <div>
+        <NavItems />
+      </div>
 
       <NavHamburger
         className={hamburgerActiveCheck}

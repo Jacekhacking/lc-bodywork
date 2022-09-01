@@ -46,18 +46,29 @@ export const NavHamburger = styled(FlexContainerVertical)`
       background-color: #62b1bd;
     }
   }
+  @media (min-width: 1200px) {
+    display: none;
+  }
 `;
 
 export const NavItemContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  margin-right: 14px;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 1200px) {
+    display: none;
+  }
+`;
+
+export const NavItemContainerSidebar = styled(NavItemContainer)`
+  flex-direction: column;
   button {
     margin-bottom: 25px;
   }
-
-  @media (max-width: 1000px) {
+  @media (max-width: 1200px) {
+    display: flex;
   }
 `;
 
@@ -65,16 +76,23 @@ export const NavItem = styled(Link)`
   background-color: transparent;
   color: white;
   border: none;
-  font-size: 2rem;
+  font-size: 1.3rem;
   border-bottom: 2px solid transparent;
   text-decoration: none;
+
   :not(:last-child) {
-    margin-bottom: 14px;
+    margin-right: 14px;
   }
   :hover {
     color: #62b1bd;
     border-bottom: 2px solid #62b1bd;
 
     cursor: pointer;
+  }
+
+  @media (max-width: 1200px) {
+    :not(:last-child) {
+      margin-bottom: 14px;
+    }
   }
 `;

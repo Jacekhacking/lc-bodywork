@@ -1,19 +1,15 @@
-import { NavItemContainer, NavItem } from "../../Styles/Navigation.styles";
+import {
+  NavItemContainer,
+  NavItem,
+  NavItemContainerSidebar,
+} from "../../Styles/Navigation.styles";
 
-const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
+export const NavItemsSidebar = ({
+  toggleDrawerHandler,
+  toggleHamburgerIsActive,
+}) => {
   return (
-    <NavItemContainer>
-      <NavItem
-        to="services"
-        getActiveProps={getActiveProps}
-        onClick={() => {
-          toggleHamburgerIsActive();
-          toggleDrawerHandler(false);
-        }}
-      >
-        Services / Prices
-      </NavItem>
-
+    <NavItemContainerSidebar>
       <NavItem
         to="/"
         getActiveProps={getActiveProps}
@@ -37,6 +33,17 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
       </NavItem>
 
       <NavItem
+        to="services"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          toggleHamburgerIsActive();
+          toggleDrawerHandler(false);
+        }}
+      >
+        Services / Prices
+      </NavItem>
+
+      <NavItem
         to="faq"
         getActiveProps={getActiveProps}
         onClick={() => {
@@ -44,6 +51,28 @@ const NavItems = ({ toggleDrawerHandler, toggleHamburgerIsActive }) => {
           toggleDrawerHandler(false);
         }}
       >
+        FAQ
+      </NavItem>
+    </NavItemContainerSidebar>
+  );
+};
+
+export const NavItems = () => {
+  return (
+    <NavItemContainer>
+      <NavItem to="/" getActiveProps={getActiveProps}>
+        Treatment Options
+      </NavItem>
+
+      <NavItem to="about" getActiveProps={getActiveProps}>
+        About Me
+      </NavItem>
+
+      <NavItem to="services" getActiveProps={getActiveProps}>
+        Services / Prices
+      </NavItem>
+
+      <NavItem to="faq" getActiveProps={getActiveProps}>
         FAQ
       </NavItem>
     </NavItemContainer>
@@ -57,5 +86,3 @@ function getActiveProps() {
     },
   };
 }
-
-export default NavItems;

@@ -15,6 +15,10 @@ const SideDrawer = (props) => {
     justify-content: center;
     flex-direction: column;
     z-index: 0;
+
+    @media (min-width: 1200px) {
+      display: none;
+    }
   `;
   return (
     <SideDrawerContainer onClick={props.onClick}>
