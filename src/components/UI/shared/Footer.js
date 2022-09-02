@@ -4,35 +4,46 @@ import FaceBookIcon from "../img/f_logo_RGB-White_72.png";
 import InstagramIcon from "../img/Instagram_Glyph_White.png";
 const Footer = () => {
   const FooterContainer = styled.div`
-    min-height: 10%;
+    min-height: 5vh;
     background-color: grey;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    /* flex-direction: column; */
     flex-shrink: 0;
-    margin-top: 3rem;
+    margin-top: 1rem;
     padding: 0 5%;
+
+    a {
+      padding-left: 10px;
+
+      :visited {
+        color: inherit;
+      }
+      :hover {
+        color: #62b1bd;
+      }
+    }
+    @media (max-width: 800px) {
+      flex-direction: column;
+    }
   `;
 
   return (
     <>
       <FooterContainer>
-        <div>
-          <button>filler filler</button>
-        </div>
-        <div>
-          <img
-            src={FooterLogo}
-            alt=""
-            style={{ height: "100px", paddingTop: "10%", paddingBottom: "10%" }}
-          />
-        </div>
+        <img
+          src={FooterLogo}
+          alt=""
+          style={{ height: "100px", paddingTop: "1%", paddingBottom: "1%" }}
+        />
+
         <div>
           <a href="">
-            <img src={FaceBookIcon} alt="Facebook" style={{ height: "60px" }} />
+            <img src={FaceBookIcon} alt="Facebook" style={{ height: "40px" }} />
           </a>
           <a href="https://www.instagram.com/lc.bodywork/">
-            <img src={InstagramIcon} style={{ height: "60px" }} alt="" />
+            <img src={InstagramIcon} style={{ height: "40px" }} alt="" />
           </a>
         </div>
       </FooterContainer>

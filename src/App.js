@@ -36,6 +36,13 @@ function App() {
               )),
           },
           {
+            path: "location",
+            element: () =>
+              import("./components/UI/Pages/Location").then((module) => (
+                <module.default />
+              )),
+          },
+          {
             path: "services",
             element: () =>
               import("./components/UI/Pages/Services").then((module) => (

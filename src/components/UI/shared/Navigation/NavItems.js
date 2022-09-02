@@ -29,7 +29,7 @@ export const NavItemsSidebar = ({
           toggleDrawerHandler(false);
         }}
       >
-        About Me
+        About
       </NavItem>
 
       <NavItem
@@ -40,7 +40,18 @@ export const NavItemsSidebar = ({
           toggleDrawerHandler(false);
         }}
       >
-        Services / Prices
+        Prices
+      </NavItem>
+
+      <NavItem
+        to="location"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          toggleHamburgerIsActive();
+          toggleDrawerHandler(false);
+        }}
+      >
+        Location
       </NavItem>
 
       <NavItem
@@ -65,11 +76,14 @@ export const NavItems = () => {
       </NavItem>
 
       <NavItem to="about" getActiveProps={getActiveProps}>
-        About Me
+        About
       </NavItem>
 
       <NavItem to="services" getActiveProps={getActiveProps}>
-        Services / Prices
+        Prices
+      </NavItem>
+      <NavItem to="/location" getActiveProps={getActiveProps}>
+        Location
       </NavItem>
 
       <NavItem to="faq" getActiveProps={getActiveProps}>

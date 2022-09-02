@@ -37,14 +37,6 @@ const Faq = () => {
           healthcare journey, like a chiropractor or dentist would be. The best
           tip is a referral!
         </p>
-
-        <Header3 style={{ marginTop: "5rem" }}> Location</Header3>
-
-        <p>
-          LCBODYWORK is located in Trolley Healing Hub. 515 S 700 E suite 2D.
-          There is free parking in the parking garage at the Trolley Corners
-          building(entrance off 515 S).
-        </p>
       </TextContentPageWrapper>
     </>
   );
