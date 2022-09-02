@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { JsonData } from "../../../data";
+import { AboutData } from "../../../data";
 import BioPic from "../img/biopic.JPG";
 
 const About = () => {
@@ -37,14 +37,14 @@ const About = () => {
       flex-direction: column;
     }
   `;
-
+  const AboutComponentData = AboutData[0];
   return (
     <>
       <AboutWrapper>
         <img src={BioPic} alt="Bio" />
         <p>
-          <AboutHeader>{JsonData[0].Bio.title}</AboutHeader>
-          {JsonData[0].Bio.content}
+          <AboutHeader>{AboutComponentData.title}</AboutHeader>
+          {AboutComponentData.content}
         </p>
       </AboutWrapper>
     </>

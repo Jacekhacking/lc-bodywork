@@ -1,10 +1,8 @@
-export const JsonData = [
+export const AboutData = [
   {
-    Bio: {
-      title: "Lisa Colling, LMT",
-      content:
-        "I’ve been practicing Massage Therapy since 2017, when I was first licensed in New York. I moved to Utah to adventure and explore the mountains( it’s beautiful out here!). When I started my education I immediately recognized a real interest in anatomy, muscle/tissue health, and biomechanics of healthy movement. Being an athlete myself, I understand and want to help you feel and move better in your body. I specialize in pain and injury relief using orthopedic assessment and clinical reasoning to best treat your areas of concern, improve mobility, and facilitate recovery. I truly believe massage can improve your quality of life. I’ve continued my education in Integrated Manual Therapy for orthopedic conditions and hold a specialty certificate of Clinical Rehabilitative Massage from NCBTMB and The Academy of Clinical Massage.",
-    },
+    title: "Lisa Colling, LMT",
+    content:
+      "I’ve been practicing Massage Therapy since 2017, when I was first licensed in New York. I moved to Utah to adventure and explore the mountains( it’s beautiful out here!). When I started my education I immediately recognized a real interest in anatomy, muscle/tissue health, and biomechanics of healthy movement. Being an athlete myself, I understand and want to help you feel and move better in your body. I specialize in pain and injury relief using orthopedic assessment and clinical reasoning to best treat your areas of concern, improve mobility, and facilitate recovery. I truly believe massage can improve your quality of life. I’ve continued my education in Integrated Manual Therapy for orthopedic conditions and hold a specialty certificate of Clinical Rehabilitative Massage from NCBTMB and The Academy of Clinical Massage.",
   },
 ];
 export const DropDownJson = [
