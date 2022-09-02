@@ -10,6 +10,9 @@ const Backdrop = (props) => {
     height: 100vh;
     background: rgba(0, 0, 0, 0.75);
     z-index: 1;
+    @media (min-width: 1200px) {
+      display: none;
+    }
   `;
 
   return ReactDOM.createPortal(

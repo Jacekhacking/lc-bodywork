@@ -57,6 +57,7 @@ export const NavItemContainer = styled.div`
 
   @media (max-width: 1200px) {
     display: none;
+    margin-right: 0;
   }
 `;
 
@@ -91,6 +92,7 @@ export const NavItem = styled(Link)`
   @media (max-width: 1200px) {
     :not(:last-child) {
       margin-bottom: 14px;
+      margin-right: 0;
     }
   }
 `;
