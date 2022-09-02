@@ -13,6 +13,7 @@ import {
 } from "../../Styles/Navigation.styles";
 import { StyledButton } from "../../Styles/Global.styles";
 import Logo from "../../img/LC_BodyWork_Icon_White.png";
+import Backdrop from "../Backdrop";
 
 const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
@@ -31,6 +32,14 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
 
   return (
     <NavContainer ref={listRef}>
+      {drawerIsOpen && (
+        <Backdrop
+          onClick={() => {
+            toggleDrawerHandler(false);
+            toggleHamburgerIsActive();
+          }}
+        />
+      )}
       {drawerIsOpen && (
         <SideDrawer>
           <Link

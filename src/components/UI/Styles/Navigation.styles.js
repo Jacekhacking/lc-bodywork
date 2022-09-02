@@ -26,10 +26,8 @@ export const NavLogo = styled.button`
 `;
 
 export const NavHamburger = styled(FlexContainerVertical)`
-  z-index: 2;
   margin-right: 30px;
   transition: all 0.4s ease-in-out;
-
   span {
     height: 2px;
     width: 28px;

@@ -1,11 +1,12 @@
 import styled from "styled-components";
+import ReactDOM from "react-dom";
 
 const SideDrawer = (props) => {
-  const SideDrawerContainer = styled.aside`
+  const SideDrawerContainer = styled.div`
     position: fixed;
     right: 0;
     top: 0;
-    z-index: 100;
+
     height: 100vh;
     width: 60%;
     background: black;
@@ -14,7 +15,6 @@ const SideDrawer = (props) => {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    z-index: 0;
 
     @media (min-width: 1200px) {
       display: none;
@@ -25,5 +25,7 @@ const SideDrawer = (props) => {
       {props.children}
     </SideDrawerContainer>
   );
+
+  // return ReactDOM.createPortal(content, document.getElementById("drawer-hook"));
 };
 export default SideDrawer;
