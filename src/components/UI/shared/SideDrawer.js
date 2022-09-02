@@ -8,7 +8,7 @@ const SideDrawer = (props) => {
     top: 0;
 
     height: 100vh;
-    width: 60%;
+    width: 80%;
     background: black;
     box-shadow: -3px 5px 20px black;
     display: flex;
@@ -18,6 +18,8 @@ const SideDrawer = (props) => {
 
     @media (min-width: 1200px) {
       display: none;
+    }
+    @media (max-width: 800px) {
     }
   `;
   return (

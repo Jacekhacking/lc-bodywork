@@ -9,13 +9,13 @@ const Footer = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* flex-direction: column; */
+    flex-direction: column;
     flex-shrink: 0;
     margin-top: 1rem;
     padding: 0 5%;
 
     a {
-      padding-left: 10px;
+      padding: 5px;
 
       :visited {
         color: inherit;
@@ -34,16 +34,16 @@ const Footer = () => {
       <FooterContainer>
         <img
           src={FooterLogo}
-          alt=""
+          alt="LC Bodyworks Logo"
           style={{ height: "100px", paddingTop: "1%", paddingBottom: "1%" }}
         />
 
         <div>
           <a href="">
-            <img src={FaceBookIcon} alt="Facebook" style={{ height: "40px" }} />
+            <img src={FaceBookIcon} alt="Facebook" style={{ height: "30px" }} />
           </a>
           <a href="https://www.instagram.com/lc.bodywork/">
-            <img src={InstagramIcon} style={{ height: "40px" }} alt="" />
+            <img src={InstagramIcon} style={{ height: "30px" }} alt="" />
           </a>
         </div>
       </FooterContainer>
