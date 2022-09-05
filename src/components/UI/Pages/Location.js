@@ -21,7 +21,6 @@ const LocationPage = () => {
       width: 800px;
     }
 
-  
     @media (max-width: 800px) {
       iframe {
         height: 400px;
@@ -33,6 +32,7 @@ const LocationPage = () => {
         height: 300px;
         width: 300px;
       }
+    }
   `;
 
   return (
