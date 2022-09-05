@@ -20,6 +20,19 @@ const LocationPage = () => {
       height: 800px;
       width: 800px;
     }
+
+  
+    @media (max-width: 800px) {
+      iframe {
+        height: 400px;
+        width: 400px;
+      }
+    }
+    @media (max-width: 400px) {
+      iframe {
+        height: 300px;
+        width: 300px;
+      }
   `;
 
   return (
