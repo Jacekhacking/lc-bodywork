@@ -6,20 +6,20 @@ export const AboutData = [
     certs: [
       {
         title: "Clinical Rehabilitative Massage Specialty Certificate",
-        link: "www.ncbtmb.org",
+        link: "https://www.ncbtmb.org",
       },
       {
         title: "Orthopedic Massage from Academy of Clinical Massage",
-        link: "www.academyofclinicalmassage.com",
+        link: "https://www.academyofclinicalmassage.com",
       },
       {
         title:
           "Integrated Manual Therapy and Orthopedic Massage for Upper Body Conditions & Lower Body Conditions. Instructor: James Waslask",
-        link: "www.orthomassage.net",
+        link: "https://www.orthomassage.net",
       },
       {
         title: "Orthopedic Cupping. Instructor: Dr. Joi Edwards ",
-        link: "www.owlchemyeducation.com",
+        link: "https://www.owlchemyeducation.com",
       },
     ],
   },
@@ -53,7 +53,7 @@ export const DropDownJson = [
 
 export const ServicesAndRates = [
   {
-    title: "Services & Rates",
+    title: "Treatment Massage",
     description:
       "This session will be for a specific area of the body. Addressing specific injury rehab, or maintenance of muscle groups used frequently in your day to day life. (If we are treating an injury, we will need multiple sessions to facilitate healing and make progress throughout the rehabilitation process.) ",
     menu: [

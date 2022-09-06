@@ -25,12 +25,23 @@ const About = () => {
       height: auto;
       padding: 0.5rem;
     }
-    p {
+    div {
       display: flex;
       justify-content: center;
       flex-direction: column;
       max-width: 800px;
       text-align: center;
+      ul {
+        padding-top: 1rem;
+        font-size: 1rem;
+        a {
+          color: white;
+          font-size: 0.8rem;
+        }
+        a:visited {
+          color: inherit;
+        }
+      }
     }
 
     @media (max-width: 1300px) {
@@ -38,14 +49,30 @@ const About = () => {
     }
   `;
   const AboutComponentData = AboutData[0];
+  const AboutCerts = AboutData[0].certs;
+
   return (
     <>
       <AboutWrapper>
         <img src={BioPic} alt="Bio" />
-        <p>
+        <div>
           <AboutHeader>{AboutComponentData.title}</AboutHeader>
           {AboutComponentData.content}
-        </p>
+          <ul>
+            {AboutCerts.map((content) => (
+              <li>
+                {content.title}{" "}
+                <a
+                  href={content.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Visit Their Site
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
       </AboutWrapper>
     </>
   );

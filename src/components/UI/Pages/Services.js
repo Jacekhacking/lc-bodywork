@@ -3,19 +3,31 @@ import {
   Header3,
   TextContentPageWrapper,
 } from "../Styles/Global.styles";
+import { ServicesAndRates } from "../../../data";
 
+console.log(ServicesAndRates);
 const Services = () => {
   return (
     <>
       <TextContentPageWrapper>
-        <Header3 style={{ marginTop: "5rem" }}>Services & Rates</Header3>
+        <Header2 style={{ marginTop: "5rem" }}>Services & Rates</Header2>
 
-        <ul style={{ textAlign: "center" }}>
-          <li>45min- $90</li>
-          <li>60min- $120</li>
-          <li>90min- $175</li>
-          <li>120min- $230</li>
-        </ul>
+        {ServicesAndRates.map((service) => (
+          <>
+            <Header3>{service.title}</Header3>
+            <p>{service.description}</p>
+            <ul>
+              {service.menu.map((menu) => (
+                <li style={{ display: "flex" }}>
+                  <section style={{ paddingRight: "1rem" }}>
+                    {menu.duration} min
+                  </section>
+                  <section>${menu.cost}</section>
+                </li>
+              ))}
+            </ul>
+          </>
+        ))}
 
         <Header3 style={{ marginTop: "5rem" }}>Cancellation policy</Header3>
         <p>

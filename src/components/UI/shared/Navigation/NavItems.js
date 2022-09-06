@@ -40,7 +40,7 @@ export const NavItemsSidebar = ({
           toggleDrawerHandler(false);
         }}
       >
-        Prices
+        Services
       </NavItem>
 
       <NavItem
@@ -80,7 +80,7 @@ export const NavItems = () => {
       </NavItem>
 
       <NavItem to="services" getActiveProps={getActiveProps}>
-        Prices
+        Services
       </NavItem>
       <NavItem to="/location" getActiveProps={getActiveProps}>
         Location
