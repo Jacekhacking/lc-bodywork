@@ -3,6 +3,25 @@ export const AboutData = [
     title: "Lisa Colling, LMT",
     content:
       "I’ve been practicing Massage Therapy since 2017, when I was first licensed in New York. I moved to Utah to adventure and explore the mountains( it’s beautiful out here!). When I started my education I immediately recognized a real interest in anatomy, muscle/tissue health, and biomechanics of healthy movement. Being an athlete myself, I understand and want to help you feel and move better in your body. I specialize in pain and injury relief using orthopedic assessment and clinical reasoning to best treat your areas of concern, improve mobility, and facilitate recovery. I truly believe massage can improve your quality of life. I’ve continued my education in Integrated Manual Therapy for orthopedic conditions and hold a specialty certificate of Clinical Rehabilitative Massage from NCBTMB and The Academy of Clinical Massage.",
+    certs: [
+      {
+        title: "Clinical Rehabilitative Massage Specialty Certificate",
+        link: "www.ncbtmb.org",
+      },
+      {
+        title: "Orthopedic Massage from Academy of Clinical Massage",
+        link: "www.academyofclinicalmassage.com",
+      },
+      {
+        title:
+          "Integrated Manual Therapy and Orthopedic Massage for Upper Body Conditions & Lower Body Conditions. Instructor: James Waslask",
+        link: "www.orthomassage.net",
+      },
+      {
+        title: "Orthopedic Cupping. Instructor: Dr. Joi Edwards ",
+        link: "www.owlchemyeducation.com",
+      },
+    ],
   },
 ];
 export const DropDownJson = [
@@ -29,5 +48,65 @@ export const DropDownJson = [
     image: require("./components/UI/img/CuppingPic.jpg"),
     description:
       "Or Myofascial Decompression. Creates a vacuum(negative pressure) between the skin and underlying tissues helping to lift, stretch, and separate tissue layers. Facilitating the reduction of adhesions, hydrating the tissues, and enhancing blood flow. Resulting in improved mobility and a decrease in pain and dysfunction.",
+  },
+];
+
+export const ServicesAndRates = [
+  {
+    title: "Services & Rates",
+    description:
+      "This session will be for a specific area of the body. Addressing specific injury rehab, or maintenance of muscle groups used frequently in your day to day life. (If we are treating an injury, we will need multiple sessions to facilitate healing and make progress throughout the rehabilitation process.) ",
+    menu: [
+      {
+        duration: 45,
+        cost: 95,
+      },
+    ],
+  },
+  {
+    title: "Massage",
+    description:
+      "Customized massage session using integrated manual therapy. Assessments will be performed as needed.",
+    menu: [
+      {
+        duration: 60,
+        cost: 125,
+      },
+      {
+        duration: 75,
+        cost: 150,
+      },
+      {
+        duration: 90,
+        cost: 175,
+      },
+      {
+        duration: 120,
+        cost: 225,
+      },
+    ],
+  },
+  {
+    title: "4-Packs",
+    description:
+      "These packages are to encourage you to invest in your health. Massage is the most beneficial if  received on a regular basis. I want you to have the freedom to move and perform how you want to in life, and to get there you’ll need more than one session.",
+    menu: [
+      {
+        duration: 45,
+        cost: 360,
+      },
+      {
+        duration: 60,
+        cost: 480,
+      },
+      {
+        duration: 75,
+        cost: 580,
+      },
+      {
+        duration: 90,
+        cost: 680,
+      },
+    ],
   },
 ];
