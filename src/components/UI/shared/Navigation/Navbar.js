@@ -60,10 +60,11 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
             toggleHamburgerIsActive={toggleHamburgerIsActive}
             toggleDrawerHandler={toggleDrawerHandler}
           />
-
-          <StyledButton style={{ marginTop: "2rem", height: "70px" }}>
+        <a href=" https://lcbodyworkllc.clinicsense.com/" target="_blank"
+                  rel="noopener noreferrer"> <StyledButton style={{ marginTop: "2rem", height: "70px" }}>
             Book A Session!
-          </StyledButton>
+          </StyledButton></a>
+
         </SideDrawer>
       )}
 

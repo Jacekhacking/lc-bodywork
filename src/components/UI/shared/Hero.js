@@ -45,7 +45,10 @@ const Hero = () => {
         }}
       >
         <Header2 style={{}}>Pain and Injury Relief and Sports Recovery</Header2>
-        <StyledButton>Book Now!</StyledButton>
+
+      <a href=" https://lcbodyworkllc.clinicsense.com/" target="_blank"
+                  rel="noopener noreferrer">  <StyledButton>Book Now!</StyledButton></a>
+
       </div>
     </>
   );
