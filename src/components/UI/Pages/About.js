@@ -32,14 +32,14 @@ const About = () => {
       max-width: 800px;
       text-align: center;
       ul {
-        padding-top: 1rem;
-        font-size: 1rem;
+        padding-top: 1.2rem;
+        font-size: 1.2rem;
         a {
           color: white;
-          font-size: 0.8rem;
+          font-size: 0.9rem;
         }
-        a:visited {
-          color: inherit;
+        a:hover {
+          color: #62b1bd;
         }
       }
     }

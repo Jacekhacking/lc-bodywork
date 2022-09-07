@@ -19,7 +19,7 @@ export const AboutData = [
       },
       {
         title: "Orthopedic Cupping. Instructor: Dr. Joi Edwards ",
-        link: "https://www.owlchemyeducation.com",
+        link: "http://www.owlchemyeducation.com",
       },
     ],
   },
@@ -70,7 +70,7 @@ export const ServicesAndRates = [
     menu: [
       {
         duration: 60,
-        cost: 125,
+        cost: 120,
       },
       {
         duration: 75,
@@ -97,7 +97,7 @@ export const ServicesAndRates = [
       },
       {
         duration: 60,
-        cost: 480,
+        cost: 460,
       },
       {
         duration: 75,
