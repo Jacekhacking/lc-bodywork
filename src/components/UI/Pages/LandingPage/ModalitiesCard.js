@@ -4,7 +4,6 @@ import {
   LandingPageBodyCardButton,
   DropdownContainer,
   LandingPageWrapper,
-  DropdownContainer2,
 } from "../../Styles/LandingPageBody.styles";
 import { DropDownJson } from "../../../../data";
 
@@ -20,22 +19,23 @@ const ModalitiesCard = (props) => {
 
   const toggleDropdown = () => setDropdown(!dropdown);
 
+  const { title, description, image } = props;
   return (
     <>
       <LandingPageWrapper ref={listRef}>
-        <LandingPageBodyCardDiv inputImg={props.image}>
+        <LandingPageBodyCardDiv inputImg={image}>
           <LandingPageBodyCardButton onClick={toggleDropdown}>
-            {props.title}
+            {title}
           </LandingPageBodyCardButton>
         </LandingPageBodyCardDiv>
         <DropdownContainer>
-          <h2>{props.title}</h2>
-          <p>{props.description}</p>
+          <h2>{title}</h2>
+          <p>{description}</p>
         </DropdownContainer>
         {dropdown && (
-          <DropdownContainer2>
-            <p>{props.description}</p>
-          </DropdownContainer2>
+          <DropdownContainer style={{ display: "block" }}>
+            <p onClick={toggleDropdown}>{description}</p>
+          </DropdownContainer>
         )}
       </LandingPageWrapper>
     </>

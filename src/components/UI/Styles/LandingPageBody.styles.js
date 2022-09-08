@@ -35,7 +35,7 @@ export const LandingPageBodyCardButton = styled.button`
   font-size: 1.7rem;
   border: 3px solid black;
   border-radius: 5px;
-  :hover {
+  &:hover {
     color: #62b1bd;
     background-color: black;
     border: 3px solid #62b1bd;
@@ -61,17 +61,11 @@ export const DropdownContainer = styled.div`
   }
   @media (max-width: 1600px) {
     display: none;
-  }
-`;
-
-export const DropdownContainer2 = styled.div`
-  margin-top: 1rem;
-  max-width: 45rem;
-  font-size: 1.7rem;
-  text-align: center;
-
-  @media (min-width: 1600px) {
-    display: none;
+    padding: 0;
+    margin-top: 1rem;
+    max-width: 45rem;
+    font-size: 1.7rem;
+    text-align: center;
   }
   @media (max-width: 1000px) {
     font-size: 1.3rem;
