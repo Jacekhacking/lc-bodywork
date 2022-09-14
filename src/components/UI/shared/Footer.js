@@ -4,16 +4,13 @@ import FaceBookIcon from "../img/f_logo_RGB-White_72.png";
 import InstagramIcon from "../img/Instagram_Glyph_White.png";
 const Footer = () => {
   const FooterContainer = styled.div`
-    min-height: 5vh;
     background-color: grey;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    flex-shrink: 0;
-    margin-top: 1rem;
-    padding: 0 5%;
-
+    margin-top: 0.5rem;
+    padding: 0 1%;
+    font-size: 1.3rem;
     a {
       padding: 5px;
 
@@ -22,6 +19,25 @@ const Footer = () => {
       }
       :hover {
         color: #62b1bd;
+      }
+    }
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: white;
+      }
+      img {
+        height: 50px;
+        padding: 5px;
+        border-radius: 50px;
+        &:hover {
+          background-color: #62b1bd;
+        }
+      }
+      @media (max-width: 800px) {
+        flex-direction: column;
       }
     }
     @media (max-width: 800px) {
@@ -35,15 +51,23 @@ const Footer = () => {
         <img
           src={FooterLogo}
           alt="LC Bodyworks Logo"
-          style={{ height: "100px", paddingTop: "1%", paddingBottom: "1%" }}
+          style={{ height: "80px", paddingTop: "1%", paddingBottom: "1%" }}
         />
 
         <div>
+          <ul>
+            <li>
+              Email:
+              <a href="mailto:lisa@lcbodywork.com">lisa@lcbodywork.com</a>
+            </li>
+            <li>Phone: 801-449-1124</li>
+          </ul>
+
           <a href="">
-            <img src={FaceBookIcon} alt="Facebook" style={{ height: "30px" }} />
+            <img src={FaceBookIcon} alt="Facebook" />
           </a>
           <a href="https://www.instagram.com/lc.bodywork/">
-            <img src={InstagramIcon} style={{ height: "30px" }} alt="" />
+            <img src={InstagramIcon} alt="Instagram" />
           </a>
         </div>
       </FooterContainer>

@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ReactDOM from "react-dom";
 
 const SideDrawer = (props) => {
   const SideDrawerContainer = styled.div`

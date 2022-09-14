@@ -48,7 +48,7 @@ const About = () => {
       flex-direction: column;
     }
   `;
-  const AboutComponentData = AboutData[0];
+  const { title, content } = AboutData[0];
   const AboutCerts = AboutData[0].certs;
 
   return (
@@ -56,12 +56,12 @@ const About = () => {
       <AboutWrapper>
         <img src={BioPic} alt="Bio" />
         <div>
-          <AboutHeader>{AboutComponentData.title}</AboutHeader>
-          {AboutComponentData.content}
+          <AboutHeader>{title}</AboutHeader>
+          {content}
           <ul>
             {AboutCerts.map((content) => (
               <li>
-                {content.title}{" "}
+                {content.title}
                 <a
                   href={content.link}
                   target="_blank"
