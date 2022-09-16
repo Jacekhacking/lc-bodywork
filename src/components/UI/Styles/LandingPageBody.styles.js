@@ -21,6 +21,7 @@ export const LandingPageBodyCardDiv = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 1000px) {
+    padding: 0;
     width: 20rem;
     height: 20rem;
     margin: 0;
@@ -56,6 +57,8 @@ export const DropdownContainer = styled.div`
   flex-direction: column;
 
   h2 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
     padding-bottom: 10px;
     text-decoration: underline;
   }
@@ -78,5 +81,8 @@ export const LandingPageWrapper = styled(FlexContainer)`
   @media (max-width: 1600px) {
     display: block;
     text-align: center;
+  }
+  @media (max-width: 500px) {
+    padding: 20px 0;
   }
 `;

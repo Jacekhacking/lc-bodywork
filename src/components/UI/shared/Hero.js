@@ -14,7 +14,6 @@ const Hero = () => {
     background-image: url(${Img});
     background-repeat: no-repeat;
     background-size: cover;
-    /* box-shadow: 0 15px 15px black; */
     img {
       height: 90%;
       width: auto;
@@ -24,7 +23,17 @@ const Hero = () => {
         height: 60%;
       }
       @media (max-width: 550px) {
+        img {
+          height: 40%;
+        }
       }
+    }
+  `;
+
+  const HeroHeader = styled(Header2)`
+    text-transform: uppercase;
+    @media (max-width: 550px) {
+      font-size: 2rem;
     }
   `;
 
@@ -44,7 +53,7 @@ const Hero = () => {
           backgroundColor: "black",
         }}
       >
-        <Header2 style={{}}>Pain and Injury Relief and Sports Recovery</Header2>
+        <HeroHeader>Pain and Injury Relief and Sports Recovery</HeroHeader>
 
         <a
           href=" https://lcbodyworkllc.clinicsense.com/"
