@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/lc-bodywork/static/js/main.7b21ce61.js",
-    "static/js/860.9c2269ec.chunk.js": "/lc-bodywork/static/js/860.9c2269ec.chunk.js",
+    "main.js": "/lc-bodywork/static/js/main.a5740486.js",
+    "static/js/959.06ed3158.chunk.js": "/lc-bodywork/static/js/959.06ed3158.chunk.js",
     "static/js/136.2f235e03.chunk.js": "/lc-bodywork/static/js/136.2f235e03.chunk.js",
-    "static/js/794.996edca3.chunk.js": "/lc-bodywork/static/js/794.996edca3.chunk.js",
-    "static/js/289.043918df.chunk.js": "/lc-bodywork/static/js/289.043918df.chunk.js",
-    "static/js/770.f446c928.chunk.js": "/lc-bodywork/static/js/770.f446c928.chunk.js",
+    "static/js/794.9ca6e42d.chunk.js": "/lc-bodywork/static/js/794.9ca6e42d.chunk.js",
+    "static/js/289.5fe32a26.chunk.js": "/lc-bodywork/static/js/289.5fe32a26.chunk.js",
+    "static/js/770.7cae778e.chunk.js": "/lc-bodywork/static/js/770.7cae778e.chunk.js",
     "static/js/787.e3fd6c30.chunk.js": "/lc-bodywork/static/js/787.e3fd6c30.chunk.js",
     "static/media/TherapeuticMassagePic.jpg": "/lc-bodywork/static/media/TherapeuticMassagePic.738af4a4c5d728b187b9.jpg",
     "static/media/OrthopedicMassagePic.jpg": "/lc-bodywork/static/media/OrthopedicMassagePic.7962bca21af75745a822.jpg",
@@ -18,15 +18,15 @@
     "static/media/Hero.jpg": "/lc-bodywork/static/media/Hero.693949849b506478cec3.jpg",
     "static/media/LC_BodyWork_Icon_White.png": "/lc-bodywork/static/media/LC_BodyWork_Icon_White.e1cabc25a107c90371d0.png",
     "index.html": "/lc-bodywork/index.html",
-    "main.7b21ce61.js.map": "/lc-bodywork/static/js/main.7b21ce61.js.map",
-    "860.9c2269ec.chunk.js.map": "/lc-bodywork/static/js/860.9c2269ec.chunk.js.map",
+    "main.a5740486.js.map": "/lc-bodywork/static/js/main.a5740486.js.map",
+    "959.06ed3158.chunk.js.map": "/lc-bodywork/static/js/959.06ed3158.chunk.js.map",
     "136.2f235e03.chunk.js.map": "/lc-bodywork/static/js/136.2f235e03.chunk.js.map",
-    "794.996edca3.chunk.js.map": "/lc-bodywork/static/js/794.996edca3.chunk.js.map",
-    "289.043918df.chunk.js.map": "/lc-bodywork/static/js/289.043918df.chunk.js.map",
-    "770.f446c928.chunk.js.map": "/lc-bodywork/static/js/770.f446c928.chunk.js.map",
+    "794.9ca6e42d.chunk.js.map": "/lc-bodywork/static/js/794.9ca6e42d.chunk.js.map",
+    "289.5fe32a26.chunk.js.map": "/lc-bodywork/static/js/289.5fe32a26.chunk.js.map",
+    "770.7cae778e.chunk.js.map": "/lc-bodywork/static/js/770.7cae778e.chunk.js.map",
     "787.e3fd6c30.chunk.js.map": "/lc-bodywork/static/js/787.e3fd6c30.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.7b21ce61.js"
+    "static/js/main.a5740486.js"
   ]
 }
