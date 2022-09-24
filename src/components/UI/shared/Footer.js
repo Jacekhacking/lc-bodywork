@@ -65,7 +65,7 @@ const Footer = () => {
               Email:
               <a href="mailto:lisa@lcbodywork.com">lisa@lcbodywork.com</a>
             </li>
-            <li>Phone: 801-449-1124</li>
+            <li>Phone: 801-449-1224</li>
           </ul>
           <SocialMediaDiv>
             <a
