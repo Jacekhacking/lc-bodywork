@@ -2,11 +2,19 @@ import GlobalStyles from "./components/UI/Styles/Global.styles";
 import Footer from "./components/UI/shared/Footer";
 import Navbar from "./components/UI/shared/Navigation/Navbar";
 
-import { Outlet, ReactLocation, Router } from "@tanstack/react-location";
+import {
+  Outlet,
+  ReactLocation,
+  Router,
+  createHashHistory,
+} from "@tanstack/react-location";
 
 function App() {
+  // Create a hash history
+  const hashHistory = createHashHistory();
+
   // Set up a ReactLocation instance
-  const location = new ReactLocation();
+  const location = new ReactLocation({ history: hashHistory });
 
   return (
     <>
