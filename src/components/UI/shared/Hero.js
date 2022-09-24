@@ -27,6 +27,7 @@ const Hero = () => {
       }
       @media (max-width: 550px) {
         img {
+          height: 50%;
         }
       }
     }
