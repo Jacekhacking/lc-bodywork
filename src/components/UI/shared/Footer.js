@@ -44,7 +44,7 @@ const Footer = () => {
       flex-direction: column;
     }
   `;
-  const socialMediaDiv = styled.div`
+  const SocialMediaDiv = styled.div`
     @media (max-width: 800px) {
       display: flex;
     }
@@ -67,7 +67,7 @@ const Footer = () => {
             </li>
             <li>Phone: 801-449-1124</li>
           </ul>
-          <socialMediaDiv>
+          <SocialMediaDiv>
             <a
               href="https://www.facebook.com/lc.bodywork/"
               target="_blank"
@@ -82,7 +82,7 @@ const Footer = () => {
             >
               <img src={InstagramIcon} alt="Instagram" />
             </a>
-          </socialMediaDiv>
+          </SocialMediaDiv>
         </div>
       </FooterContainer>
     </>

@@ -23,7 +23,7 @@ const ModalitiesCard = (props) => {
   return (
     <>
       <LandingPageWrapper ref={listRef}>
-        <LandingPageBodyCardDiv inputImg={image}>
+        <LandingPageBodyCardDiv value={title} inputImg={image}>
           <LandingPageBodyCardButton onClick={toggleDropdown}>
             {title}
           </LandingPageBodyCardButton>
@@ -48,7 +48,7 @@ const ModalitiesComponent = (props) => {
   return (
     <>
       {Contents.map((content) => (
-        <ModalitiesCard {...content} />
+        <ModalitiesCard key={content.title} {...content} />
       ))}
     </>
   );

@@ -76,7 +76,7 @@ const GlobalStyles = createGlobalStyle`
 }
 
   .hamburger-active{
-  transition-delay: 0.8s;
+  transition-delay: 0.4s;
   transform: rotate(45deg);
 }
 .hamburger-active, .hamburger-active > span{

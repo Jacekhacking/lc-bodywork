@@ -1,7 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "@tanstack/react-location";
-import { useAutoAnimate } from "@formkit/auto-animate/react";
-
 import SideDrawerLogo from "../../img/LC_BodyWork_Icon_White_Teal.png";
 import SideDrawer from "../SideDrawer";
 import { NavItems, NavItemsSidebar } from "./NavItems";
@@ -28,10 +26,22 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
   };
 
   let hamburgerActiveCheck = hamburgerIsActive ? "hamburger-active" : null;
-  const [listRef] = useAutoAnimate();
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1200) {
+        setDrawerIsOpen(false);
+        setHamburgerIsActive(false);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
 
   return (
-    <NavContainer ref={listRef}>
+    <NavContainer>
       {drawerIsOpen && (
         <Backdrop
           onClick={() => {
@@ -60,11 +70,15 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
             toggleHamburgerIsActive={toggleHamburgerIsActive}
             toggleDrawerHandler={toggleDrawerHandler}
           />
-        <a href=" https://lcbodyworkllc.clinicsense.com/" target="_blank"
-                  rel="noopener noreferrer"> <StyledButton style={{ marginTop: "2rem", height: "70px" }}>
-            Book A Session!
-          </StyledButton></a>
-
+          <a
+            href=" https://lcbodyworkllc.clinicsense.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <StyledButton style={{ marginTop: "2rem", height: "70px" }}>
+              Book A Session!
+            </StyledButton>
+          </a>
         </SideDrawer>
       )}
 

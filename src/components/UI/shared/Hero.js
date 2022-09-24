@@ -1,5 +1,7 @@
 import styled from "styled-components";
-import Img from "../img/Hero.jpg";
+import LargeHeroImg from "../img/Hero.jpg";
+
+import SmallHeroImg from "../img/small_hero.jpg";
 import LogoImg from "../img/LC_BodyWork_Logo_Color.png";
 import { Header2, StyledButton } from "../Styles/Global.styles";
 
@@ -11,7 +13,7 @@ const Hero = () => {
     position: relative;
     height: 65vh;
 
-    background-image: url(${Img});
+    background-image: url(${LargeHeroImg});
     background-repeat: no-repeat;
     background-size: cover;
     img {
@@ -19,12 +21,12 @@ const Hero = () => {
       width: auto;
     }
     @media (max-width: 1000px) {
+      background-image: url(${SmallHeroImg});
       img {
-        height: 60%;
+        height: 70%;
       }
       @media (max-width: 550px) {
         img {
-          height: 40%;
         }
       }
     }
