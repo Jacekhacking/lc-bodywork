@@ -14,6 +14,7 @@ export const NavItemsSidebar = ({
         to="/"
         getActiveProps={getActiveProps}
         onClick={() => {
+          window.scrollTo(0, 0);
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
         }}
@@ -25,6 +26,7 @@ export const NavItemsSidebar = ({
         to="about"
         getActiveProps={getActiveProps}
         onClick={() => {
+          window.scrollTo(0, 0);
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
         }}
@@ -36,6 +38,7 @@ export const NavItemsSidebar = ({
         to="services"
         getActiveProps={getActiveProps}
         onClick={() => {
+          window.scrollTo(0, 0);
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
         }}
@@ -47,6 +50,7 @@ export const NavItemsSidebar = ({
         to="location"
         getActiveProps={getActiveProps}
         onClick={() => {
+          window.scrollTo(0, 0);
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
         }}
@@ -58,6 +62,7 @@ export const NavItemsSidebar = ({
         to="faq"
         getActiveProps={getActiveProps}
         onClick={() => {
+          window.scrollTo(0, 0);
           toggleHamburgerIsActive();
           toggleDrawerHandler(false);
         }}
@@ -71,22 +76,52 @@ export const NavItemsSidebar = ({
 export const NavItems = () => {
   return (
     <NavItemContainer>
-      <NavItem to="/" getActiveProps={getActiveProps}>
+      <NavItem
+        to="/"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         Treatment Options
       </NavItem>
 
-      <NavItem to="about" getActiveProps={getActiveProps}>
+      <NavItem
+        to="about"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         About
       </NavItem>
 
-      <NavItem to="services" getActiveProps={getActiveProps}>
+      <NavItem
+        to="services"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         Services
       </NavItem>
-      <NavItem to="/location" getActiveProps={getActiveProps}>
+      <NavItem
+        to="/location"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         Location
       </NavItem>
 
-      <NavItem to="faq" getActiveProps={getActiveProps}>
+      <NavItem
+        to="faq"
+        getActiveProps={getActiveProps}
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         FAQ
       </NavItem>
     </NavItemContainer>

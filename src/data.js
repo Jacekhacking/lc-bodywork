@@ -70,19 +70,19 @@ export const ServicesAndRates = [
     menu: [
       {
         duration: 60,
-        cost: 120,
+        cost: 125,
       },
       {
         duration: 75,
-        cost: 150,
+        cost: 155,
       },
       {
         duration: 90,
-        cost: 175,
+        cost: 180,
       },
       {
         duration: 120,
-        cost: 225,
+        cost: 230,
       },
     ],
   },

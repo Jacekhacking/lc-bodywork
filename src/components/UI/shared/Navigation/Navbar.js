@@ -13,7 +13,7 @@ import { StyledButton } from "../../Styles/Global.styles";
 import Logo from "../../img/LC_BodyWork_Icon_White.png";
 import Backdrop from "../Backdrop";
 
-const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
+const Navbar = () => {
   const [drawerIsOpen, setDrawerIsOpen] = useState(false);
   const [hamburgerIsActive, setHamburgerIsActive] = useState(false);
 
@@ -55,6 +55,7 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
           <Link
             to="/"
             onClick={() => {
+              window.scrollTo(0, 0);
               toggleDrawerHandler(false);
               toggleHamburgerIsActive();
             }}
@@ -82,7 +83,12 @@ const Navbar = ({ handleMainContentChange, handleDropdownChange }) => {
         </SideDrawer>
       )}
 
-      <Link to="/">
+      <Link
+        to="/"
+        onClick={() => {
+          window.scrollTo(0, 0);
+        }}
+      >
         <NavLogo>
           <img src={Logo} alt="LC BODYWORK logo" />
         </NavLogo>

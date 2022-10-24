@@ -1,6 +1,7 @@
 import {
   Header2,
   Header3,
+  ALink,
   TextContentPageWrapper,
 } from "../Styles/Global.styles";
 const Faq = () => {
@@ -35,7 +36,16 @@ const Faq = () => {
           Tips are never expected. My rates cover the cost of doing business
           with you. Massage Therapy is my profession and I am a provider in your
           healthcare journey, like a chiropractor or dentist would be. The best
-          tip is a referral!
+          tip is a referral and a{" "}
+          <ALink
+            href="https://g.page/r/CcOCcMaWU_c5EAg/review"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{ visited: "white" }}
+          >
+            review
+          </ALink>
+          !
         </p>
       </TextContentPageWrapper>
     </>

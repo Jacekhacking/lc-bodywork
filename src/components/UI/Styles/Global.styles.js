@@ -121,6 +121,16 @@ export const Header3 = styled.h3`
   color: ${(props) => props.color || "white"};
 `;
 
+export const ALink = styled.a`
+  color: inherit;
+  :visited {
+    color: inherit;
+  }
+  :hover {
+    color: #62b1bd;
+  }
+`;
+
 export const FlexContainer = styled.div`
   display: flex;
 `;
