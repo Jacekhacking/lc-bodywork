@@ -74,15 +74,15 @@ export const ServicesAndRates = [
       },
       {
         duration: 75,
-        cost: 155,
+        cost: 145,
       },
       {
         duration: 90,
-        cost: 180,
+        cost: 160,
       },
       {
         duration: 120,
-        cost: 230,
+        cost: 220,
       },
     ],
   },
@@ -101,11 +101,11 @@ export const ServicesAndRates = [
       },
       {
         duration: 75,
-        cost: 580,
+        cost: 560,
       },
       {
         duration: 90,
-        cost: 680,
+        cost: 640,
       },
     ],
   },

@@ -37,7 +37,7 @@ const Services = () => {
           for your scheduled appointment will result in a charge of 100% of the
           session fee. If you need to reschedule due to illness or have any
           COVID-19 symptoms, please contact me as soon as possible to
-          reschedule(801-449-1224). There will be no fee charged.
+          reschedule(801-449-1224).
         </p>
       </TextContentPageWrapper>
     </>
