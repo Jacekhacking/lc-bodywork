@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.2a897c74.js",
-    "static/js/737.43adb99d.chunk.js": "/static/js/737.43adb99d.chunk.js",
+    "main.js": "/static/js/main.703623a2.js",
+    "static/js/737.92712b26.chunk.js": "/static/js/737.92712b26.chunk.js",
     "static/js/136.dec90174.chunk.js": "/static/js/136.dec90174.chunk.js",
-    "static/js/794.60e6aa9b.chunk.js": "/static/js/794.60e6aa9b.chunk.js",
+    "static/js/794.95f504af.chunk.js": "/static/js/794.95f504af.chunk.js",
     "static/js/289.5fe32a26.chunk.js": "/static/js/289.5fe32a26.chunk.js",
-    "static/js/770.156c76d2.chunk.js": "/static/js/770.156c76d2.chunk.js",
+    "static/js/770.2634c586.chunk.js": "/static/js/770.2634c586.chunk.js",
     "static/js/787.e3fd6c30.chunk.js": "/static/js/787.e3fd6c30.chunk.js",
     "static/media/TherapeuticMassagePic.jpg": "/static/media/TherapeuticMassagePic.738af4a4c5d728b187b9.jpg",
     "static/media/OrthopedicMassagePic.jpg": "/static/media/OrthopedicMassagePic.7962bca21af75745a822.jpg",
@@ -19,15 +19,15 @@
     "static/media/small_hero.jpg": "/static/media/small_hero.fbdfa8acf9329594ee24.jpg",
     "static/media/LC_BodyWork_Icon_White.png": "/static/media/LC_BodyWork_Icon_White.e1cabc25a107c90371d0.png",
     "index.html": "/index.html",
-    "main.2a897c74.js.map": "/static/js/main.2a897c74.js.map",
-    "737.43adb99d.chunk.js.map": "/static/js/737.43adb99d.chunk.js.map",
+    "main.703623a2.js.map": "/static/js/main.703623a2.js.map",
+    "737.92712b26.chunk.js.map": "/static/js/737.92712b26.chunk.js.map",
     "136.dec90174.chunk.js.map": "/static/js/136.dec90174.chunk.js.map",
-    "794.60e6aa9b.chunk.js.map": "/static/js/794.60e6aa9b.chunk.js.map",
+    "794.95f504af.chunk.js.map": "/static/js/794.95f504af.chunk.js.map",
     "289.5fe32a26.chunk.js.map": "/static/js/289.5fe32a26.chunk.js.map",
-    "770.156c76d2.chunk.js.map": "/static/js/770.156c76d2.chunk.js.map",
+    "770.2634c586.chunk.js.map": "/static/js/770.2634c586.chunk.js.map",
     "787.e3fd6c30.chunk.js.map": "/static/js/787.e3fd6c30.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.2a897c74.js"
+    "static/js/main.703623a2.js"
   ]
 }
