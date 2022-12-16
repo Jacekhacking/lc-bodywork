@@ -78,7 +78,7 @@ export const ServicesAndRates = [
       },
       {
         duration: 90,
-        cost: 160,
+        cost: 165,
       },
       {
         duration: 120,
